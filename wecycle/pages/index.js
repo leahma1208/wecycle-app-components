@@ -5,6 +5,7 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import Tutorial from '../comps/Tutorial';
 import TutorialInfo from '../comps/TutorialInfo';
+import RegionButton from '../comps/RegionButton';
 
 
 const Holder = styled.div `
@@ -34,6 +35,10 @@ export default function Home() {
     <div className="container3">
       <TutorialInfo /> 
     </div>
+    <div className="container1">
+      <RegionButton text="Marine" />
+    </div>
+
     
   
   </Holder>
