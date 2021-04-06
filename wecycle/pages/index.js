@@ -26,13 +26,13 @@ export default function Home() {
     <div className="container1">
       <Didyouknow />
     </div>
-    <div className="container2">
+    <div className="container1">
       <Start /> 
     </div>    
-    <div className="container3">
+    <div className="container1">
       <Tutorial /> 
     </div>
-    <div className="container3">
+    <div className="container1">
       <TutorialInfo /> 
     </div>
     <div className="container1">
