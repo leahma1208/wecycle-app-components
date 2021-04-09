@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const RegionCont = styled.span`
-
+const RegionCont = styled.div`
+    margin-bottom:18px;
 `;
 
 const RegionInput = styled.button`
@@ -16,11 +16,13 @@ const RegionInput = styled.button`
 
 const RegionText= styled.p`
     color:#393939;
-    font-size:34px;
+    font-size:30px;
     font-weight:700;
     position:absolute;
     left:30px;
     font-family: 'Poppins', sans-serif;
+    z-index:10000;
+    margin-top: 46px;
 `;
 
 const Ellipse = styled.div`
@@ -31,14 +33,17 @@ const Ellipse = styled.div`
     position:absolute;
     right:29px;
     top:15px;
+    display:flex;
 `;
 
 const RegionImg = styled.img`
-    width:110px;
-    height:110px;
-    position:absolute;
-    top:31px;
-    right:25px;
+    width:${props=>props.width};
+    height:${props=>props.height};
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    
 `;
 
 const RegionButton = ({
@@ -46,14 +51,16 @@ const RegionButton = ({
     bgcolor="#ADBAFF",
     ellipsecolor="#E1E6FF",
     color="#393939",
-    src="/marine.svg"
+    src="/marine.svg",
+    width="110px",
+    height="110px"
 }) => {
 
     return <RegionCont>
         <RegionInput bg={bgcolor}>
             <RegionText color={color}>{text}</RegionText>
             <Ellipse ellipseBg={ellipsecolor}>
-                <RegionImg src={src}/>
+                <RegionImg src={src} width={width} height={height}/>
             </Ellipse>
         </RegionInput>
     </RegionCont>
