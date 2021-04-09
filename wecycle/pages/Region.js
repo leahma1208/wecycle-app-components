@@ -25,7 +25,7 @@ export default function Regions() {
         </div>
         <hr className="hr"/>
         <div className ="container1">
-            <Header text="How is plastic Affecting  Different Regions?"/>
+            <Header text="How is plastic Affecting Different Regions?"/>
         </div>
         <div className="container1">
             <RegionButton text="Marine"/>
