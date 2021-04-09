@@ -9,6 +9,7 @@ import RegionButton from '../comps/RegionButton';
 import ImgText from '../comps/ImgText';
 import Header from '../comps/Header';
 import ProgramLogo from '../comps/ProgramLogo';
+import StudyOthers from '../comps/StudyOthers';
 
 
 const Holder = styled.div `
@@ -49,6 +50,9 @@ export default function Home() {
     </div>
     <div className="container1">
       <ProgramLogo />
+    </div>
+    <div className="container1">
+      <StudyOthers />
     </div>
 
     
