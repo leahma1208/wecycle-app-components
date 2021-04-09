@@ -10,7 +10,7 @@ const Container = styled.div`
 
 const Text = styled.p `
     padding:0;
-    margin-top:0.25rem;
+    margin-top:${props=>props.margintop};
     font-size: ${props=>props.fontsize};
     font-weight: ${props=>props.weight};
     font-family: ${props=>props.fontfamily};
@@ -23,12 +23,13 @@ const Header = ({
     fontfamily="Poppins",
     fontsize="25px",
     weight="bold",
-    color="black",
+    color="#393939",
     text="Here are some organizations you can volunteer with!",
+    margintop="20px"
 }) =>{
     
     return <Container>
-        <Text fontfamily={fontfamily} fontsize={fontsize} weight={weight} color={color}>
+        <Text fontfamily={fontfamily} fontsize={fontsize} weight={weight} color={color} margintop={margintop}>
             {text}
         </Text>
     </Container>
