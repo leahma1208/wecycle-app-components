@@ -8,6 +8,7 @@ import TutorialInfo from '../comps/TutorialInfo';
 import RegionButton from '../comps/RegionButton';
 import ImgText from '../comps/ImgText';
 import Header from '../comps/Header';
+import ProgramLogo from '../comps/ProgramLogo';
 
 
 const Holder = styled.div `
@@ -45,6 +46,9 @@ export default function Home() {
     </div>
     <div className="container1">
       <Header />
+    </div>
+    <div className="container1">
+      <ProgramLogo />
     </div>
 
     
