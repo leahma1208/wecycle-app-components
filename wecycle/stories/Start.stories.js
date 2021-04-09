@@ -6,4 +6,4 @@ export default {
     component: <Start />
 }
 
-export const Tutorial = () => <Start />
+export const Tutorial = () => <Start/>

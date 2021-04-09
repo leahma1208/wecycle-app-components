@@ -6,6 +6,8 @@ import Start from '../comps/Start';
 import Tutorial from '../comps/Tutorial';
 import TutorialInfo from '../comps/TutorialInfo';
 import RegionButton from '../comps/RegionButton';
+import ImgText from '../comps/ImgText';
+import Header from '../comps/Header';
 
 
 const Holder = styled.div `
@@ -37,6 +39,12 @@ export default function Home() {
     </div>
     <div className="container1">
       <RegionButton text="Marine" />
+    </div>
+    <div className="container1">
+      <ImgText />
+    </div>
+    <div className="container1">
+      <Header />
     </div>
 
     

@@ -5,7 +5,7 @@ const Container = styled.div`
     display:flex;
     background-color: #8492ED;
     justify-content:center;
-    width:15em;
+    width:18em;
     border-radius:10px;
     background-color: ${props=>props.backcolor};
 `
@@ -24,7 +24,7 @@ const Text = styled.p `
     display:flex;
     font-weight: bold;
     letter-spacing: 0.25rem;
-    font-size: 0.75rem;
+    font-size: 16px;
     justify-content:center;
     align-items:center;
 `
@@ -33,13 +33,14 @@ const Text = styled.p `
 const Tutorial = ({
     backcolor= "#8492ED",
     textcolor= "white",
+    text="READ TUTORIAL"
 
 }) => {
     return (
         <Container>
         <Button backcolor={backcolor}>
             <Text textcolor={textcolor}> 
-                <p>READ TUTORIAL</p>
+                <p>{text}</p>
             </Text>
         </Button>
         </Container>
