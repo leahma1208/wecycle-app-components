@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Container = styled.div`
     display: flex;
     justify-content: center;
-    background-color: lightgrey;
     width:15em;
+    margin-bottom:"4rem";
 `;
 
 const Text = styled.p `

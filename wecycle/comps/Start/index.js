@@ -7,6 +7,7 @@ const Container = styled.div`
     justify-content:center;
     width:${props=>props.width};
     border-radius:${props=>props.radius};
+    margin-top:${props=>props.margintop};
     margin-bottom: 3rem;
 `
 const Button = styled.div`
@@ -28,6 +29,7 @@ const Text = styled.p `
 
 
 const Start = ({
+    margintop="2rem",
     radius="10px",
     width="18em",
     fontfamily="'Fredoka One', cursive",
@@ -36,7 +38,7 @@ const Start = ({
 
 }) => {
     return (
-        <Container radius={radius} width={width}>
+        <Container radius={radius} width={width} margintop={margintop}>
         <Button>
                 <Text fontsize={fontsize} fontfamily={fontfamily}> 
                     <p>{text}</p>
