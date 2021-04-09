@@ -1,14 +1,9 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import Menu from '../comps/Menu';
-import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import Tutorial from '../comps/Tutorial';
 import TutorialInfo from '../comps/TutorialInfo';
-import RegionButton from '../comps/RegionButton';
-import ImgText from '../comps/ImgText';
 import Header from '../comps/Header';
-import ProgramLogo from '../comps/ProgramLogo';
 
 const Holder = styled.div `
 .container {
@@ -20,6 +15,7 @@ const Holder = styled.div `
 
 .top{
     height:23rem;
+    min-width: 25rem;
 }
 
 .top img{
@@ -30,7 +26,8 @@ const Holder = styled.div `
 .bottom {
     height: 35rem;
     background-color: #5769DF;
-    border-radius: 7rem 7rem 0rem 0rem;
+    border-radius: 6rem 6rem 0rem 0rem;
+    min-width: 25rem;
 }
 
 `;
