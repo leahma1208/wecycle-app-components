@@ -5,9 +5,10 @@ const Container = styled.div`
     display:flex;
     background-color: blue;
     justify-content:left;
-    width:15em;
+    width:12em;
     border-radius:19px;
     background-color: ${props=>props.backcolor};
+    margin-left:30px;
 `
 const Holder = styled.div `
     display:flex;

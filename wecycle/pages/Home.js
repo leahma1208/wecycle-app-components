@@ -26,7 +26,7 @@ const Holder = styled.div `
 .bottom {
     height: 35rem;
     background-color: #5769DF;
-    border-radius: 6rem 6rem 0rem 0rem;
+    border-radius: 5rem 5rem 0rem 0rem;
     min-width: 25rem;
 }
 
