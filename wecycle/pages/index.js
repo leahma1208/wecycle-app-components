@@ -10,6 +10,8 @@ import ImgText from '../comps/ImgText';
 import Header from '../comps/Header';
 import ProgramLogo from '../comps/ProgramLogo';
 import StudyOthers from '../comps/StudyOthers';
+import Bodytext from '../comps/Bodytext';
+import Flags from '../comps/Flags';
 
 
 const Holder = styled.div `
@@ -53,6 +55,12 @@ export default function Home() {
     </div>
     <div className="container1">
       <StudyOthers />
+    </div>
+    <div className="container1">
+      <Bodytext />
+    </div>
+    <div className="container1">
+      <Flags />
     </div>
 
     
