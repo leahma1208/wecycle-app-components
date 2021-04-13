@@ -17,10 +17,9 @@ const RegionInput = styled.button`
 const RegionText= styled.p`
     color:#393939;
     font-size:30px;
-    font-weight:700;
+    font-weight:400;
     position:absolute;
     left:30px;
-    font-family: 'Poppins', sans-serif;
     z-index:10000;
     margin-top: 46px;
 `;
@@ -58,7 +57,7 @@ const RegionButton = ({
 
     return <RegionCont>
         <RegionInput bg={bgcolor}>
-            <RegionText color={color}>{text}</RegionText>
+            <RegionText className="fredo" color={color}>{text}</RegionText>
             <Ellipse ellipseBg={ellipsecolor}>
                 <RegionImg src={src} width={width} height={height}/>
             </Ellipse>
