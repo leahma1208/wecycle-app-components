@@ -13,9 +13,7 @@ const Holder = styled.div `
 };
 
 
-.hr {
-    border: 2px solid #E3E3E3;
-}
+
 `;
 
 export default function Regions() {
@@ -23,7 +21,7 @@ export default function Regions() {
         <div>
             <Menu></Menu>
         </div>
-        <hr className="hr"/>
+        
         <div className ="container1">
             <Header text="How is plastic Affecting Different Regions?"/>
         </div>

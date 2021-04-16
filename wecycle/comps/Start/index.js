@@ -8,7 +8,7 @@ const Container = styled.div`
     width:${props=>props.width};
     border-radius:${props=>props.radius};
     margin-top:${props=>props.margintop};
-    margin-bottom: 3rem;
+    margin-bottom:${props=>props.marginbottom};
 `
 const Button = styled.div`
     display:flex;
@@ -21,7 +21,7 @@ const Text = styled.p `
     color:white;
     display:flex;
     font-family: ${props=>props.fontfamily};
-    letter-spacing: 0.25rem;
+    letter-spacing: ${props=>props.spacing};
     font-size: ${props=>props.fontsize};
     justify-content:center;
     align-items:center;
@@ -30,17 +30,19 @@ const Text = styled.p `
 
 const Start = ({
     margintop="2rem",
+    marginbottom="3rem",
     radius="10px",
     width="18em",
     fontfamily="'Fredoka One', cursive",
     fontsize="30px",
-    text= "START"
+    text= "START",
+    spacing="0.25rem"
 
 }) => {
     return (
-        <Container radius={radius} width={width} margintop={margintop}>
+        <Container radius={radius} width={width} margintop={margintop} marginbottom={marginbottom}>
         <Button>
-                <Text fontsize={fontsize} fontfamily={fontfamily}> 
+                <Text fontsize={fontsize} fontfamily={fontfamily} spacing={spacing}> 
                     <p>{text}</p>
                 </Text>
         </Button>

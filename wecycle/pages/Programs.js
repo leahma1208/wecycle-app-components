@@ -15,9 +15,7 @@ export default function Programs (){
         margin:20px;
     }
 
-    #border {
-        border-bottom:solid #E3E3E3 4px;
-    }
+   
     `;
 
     const Headingholder = styled.div``;

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const MenuCont = styled.div`
 display: flex;
 justify-content: space-evenly;
+border-bottom: ${props=>props.borderbottom};
   
 `;
 
@@ -23,11 +24,12 @@ const HomeButton = styled.img`
 `;
 
 const Menu = ({
-    title="Regions",
-    home="block"
+    title="Programs",
+    home="block",
+    borderbottom="3px solid #E3E3E3"
 }) =>{
     
-    return <MenuCont>
+    return <MenuCont borderbottom={borderbottom}>
         <BackButton src="/back.svg"/>
         <Title className="fredo">{title}</Title>
         <HomeButton homebutton={home} src="/home.svg"/>
