@@ -13,9 +13,6 @@ const Holder = styled.div `
 };
 
 
-.hr {
-    border: 2px solid #E3E3E3;
-}
 
 
 `;
@@ -25,7 +22,7 @@ export default function Marine() {
         <div>
             <Menu title="Marine"></Menu>
         </div>
-        <hr className="hr"/>
+        
         <div className ="container1">
             <Header text="How does plastic in oceans affect..."/>
         </div>
