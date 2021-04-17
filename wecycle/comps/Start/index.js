@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const Container = styled.div`
     display:flex;
@@ -36,11 +37,15 @@ const Start = ({
     fontfamily="'Fredoka One', cursive",
     fontsize="30px",
     text= "START",
-    spacing="0.25rem"
+    spacing="0.25rem",
+    routeTo="/Home",
 
 }) => {
+
+    const router = useRouter();
+
     return (
-        <Container radius={radius} width={width} margintop={margintop} marginbottom={marginbottom}>
+        <Container onClick={()=>router.push(routeTo)} radius={radius} width={width} margintop={margintop} marginbottom={marginbottom}>
         <Button>
                 <Text fontsize={fontsize} fontfamily={fontfamily} spacing={spacing}> 
                     <p>{text}</p>

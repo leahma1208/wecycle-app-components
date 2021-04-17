@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const RegionCont = styled.div`
     margin-bottom:18px;
@@ -52,10 +53,13 @@ const RegionButton = ({
     color="#393939",
     src="/marine.svg",
     width="110px",
-    height="110px"
+    height="110px",
+    routeTo="/Marine",
 }) => {
 
-    return <RegionCont>
+    const router = useRouter();
+
+    return <RegionCont onClick={()=>router.push(routeTo)}>
         <RegionInput bg={bgcolor}>
             <RegionText className="fredo" color={color}>{text}</RegionText>
             <Ellipse ellipseBg={ellipsecolor}>
