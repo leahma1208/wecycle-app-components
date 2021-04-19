@@ -25,7 +25,8 @@ const Title = styled.h3 `
 
 const StudyOthers = ({
     title="Study Other Regions",
-    routeTo ="/regions"
+    routeTo ="/regions",
+    source = "/ForwardButton.svg",
     
 }) =>{
     const router = useRouter();
@@ -33,7 +34,7 @@ const StudyOthers = ({
     return <ButtonCont onClick={()=>router.push(routeTo)}>
         
         <Title>{title}</Title>
-        <ForwardButton src="/ForwardButton.svg"/>
+        <ForwardButton src={source} width="20px"/>
     </ButtonCont>
 }
 
