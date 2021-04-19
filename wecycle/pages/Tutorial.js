@@ -59,7 +59,7 @@ export default function Programs (){
         <TutorialCont>
 
             <Headingholder id="border">
-                <Menu title="Tutorial"/>
+                <Menu routeTo="/Home"  title="Tutorial"/>
             </Headingholder>
 
             <Titleholder>
