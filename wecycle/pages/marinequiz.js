@@ -6,6 +6,8 @@ import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import StudyOthers from '../comps/StudyOthers'
+import React, {useState} from 'react';
+import Marinequiz from '../comps/Marinequiz'
 
 const QuizCont = styled.div`
 
@@ -17,7 +19,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 width:100%;
-background-color:#ADBAFF;
+background-color:${props=>props.background};
 height:30rem;
 border-radius: 0rem 0rem 5rem 5rem;
 `;
@@ -38,7 +40,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 position:relative;
-bottom: 20px;
+bottom: 40px;
 `;
 
 const StudyMore = styled.div`
@@ -48,27 +50,66 @@ align-items: flex-end;
 margin-right: 2rem;
 `;
 
-export default function QuizTime(){
+export default function QuizTime({
+    background="#ADBAFF"
+}){
+
+    const [texts, setTexts] = useState("Click on the right waste bin to help Wendy!");
+    const [title, setTitle] = useState("Study Other Regions");
+    const [source , setSource] = useState("/ForwardButton.svg");
+    const [route, setRoute] = useState("/regions")
+    const [backgrounds, setBackground] = useState("#ADBAFF")
+
+
+
+    const HandleGarbage = () => {
+        setTexts("Incorrect! Globally, more than 240 wildlife species, are known to have ingested plastic.")
+        setTitle("Try Again")
+        setSource("/reload.svg")
+        setRoute("/marinequiz")
+        setBackground("#F66646")
+    }
+    const HandleRecycle = ({}) => {
+        setTexts("Correct!")
+        setTitle("Study Other Regions")
+        setSource("/ForwardButton.svg")
+        setRoute("/regions")
+        setBackground("#4ACE8F")
+    }
+    const HandleCompost = () => {
+        setTexts("Incorrect! Globally, more than 240 wildlife species, are known to have ingested plastic.")
+        setTitle("Try Again")
+        setSource("/reload.svg")
+        setRoute("/marinequiz")
+        setBackground("#F66646")
+    }
     return (
         <QuizCont>
             <Menu routeTo="More" title="Quiz Time" borderbottom="none"></Menu>
-            <Box>
+            <Box background={backgrounds}>
             <Titleholder>
                 <Header text="Wendy the whale might mistakenly eat the plastic debris!" />
-                <Bodytext Text="Click on the right waste bin
-                 to help Wendy!" textwidth="250px"/>
+                <Bodytext 
+                Text={texts}
+                textwidth="250px"/>
                  <Quizimg src="/marinequiz.svg"/>
             </Titleholder>
             </Box>
 
             <ButtonHolder>
-                <Start text="Garbage" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
-                <Start text="Recycle" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
-                <Start text="Compost" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
+                <Marinequiz
+                onGarbageClick={HandleGarbage}
+                onRecycleClick={HandleRecycle}
+                onCompostClick={HandleCompost}
+                />
             </ButtonHolder>
 
             <StudyMore>
-                <StudyOthers/>
+                <StudyOthers
+                title={title}
+                source={source}
+                routeTo={route}
+                />
             </StudyMore>
         </QuizCont>
     )
