@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const Container = styled.div`
     display:flex;
@@ -33,11 +34,15 @@ const Text = styled.p `
 const Tutorial = ({
     backcolor= "#8492ED",
     textcolor= "white",
-    text="READ TUTORIAL"
+    text="READ TUTORIAL",
+    routeTo="/Tutorial",
+    
 
 }) => {
+    const router = useRouter();
+
     return (
-        <Container>
+        <Container onClick={()=>router.push(routeTo)}>
         <Button backcolor={backcolor}>
             <Text textcolor={textcolor}> 
                 <p>{text}</p>

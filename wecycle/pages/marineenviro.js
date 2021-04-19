@@ -40,7 +40,7 @@ export default function MarineEnviro(){
     return (
         <Holder>
             <div>
-                <Menu routeTo="/oceanpeople"title="Environment"></Menu>
+                <Menu routeTo="/Marine" title="Environment"></Menu>
             </div>
             <div className="container">
                 <Header text="How is plastic in Oceans affecting the environment?"></Header>
@@ -52,7 +52,7 @@ export default function MarineEnviro(){
                     <Didyouknow informationtext="Scientists think that 8.8 million tons of plastic winds up in the ocean every year—that’s as if you stacked up five plastic grocery bags full of trash on top of each other on every foot of coastline in the world."></Didyouknow>
                     <img id="image" src="/envirofish.svg" width="150px"></img>
                 </div>
-                <Start routeTo="marineanimals"text="What's next?" fontsize="18px" width="200px"></Start>
+                <Start routeTo="/More" text="What's next?" fontsize="18px" width="200px"></Start>
 
 
             </div>

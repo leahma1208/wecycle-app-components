@@ -14,23 +14,19 @@ const Holder = styled.div `
 };
 
 
-
 `;
 
 export default function Regions() {
 
     return <Holder>
         <div>
-            <Menu routeTo="/Home" title="Regions"/>
+            <Menu routeTo="Marine" title="More"/>
         </div>
         
-        <div className ="container1">
-            <Header text="How is plastic Affecting Different Regions?"/>
-        </div>
         <div className="container1">
-            <RegionButton routeTo="/Marine" text="Marine"/>
-            <RegionButton text="Urban Cities" bgcolor="#AFDDCD" ellipsecolor="#C0ECDD" src="/UrbanCity.svg" width="93px" height="93px"/>
-            <RegionButton text="Landfills" bgcolor="#FFEAAD" ellipsecolor="#FFFBF0" src="/Landfills.svg" width="104px" height="104px" />
+            <RegionButton routeTo="/marinequiz" text="Quiz time"/>
+            <RegionButton routeTo="/Help" text="How to help" bgcolor="#8A9DFF" ellipsecolor="#E1E6FF" src="/howToHelp.svg" width="93px" height="93px"/>
+            <RegionButton routeTo="/Programs" text="Programs" bgcolor="#7086FF" ellipsecolor="#CED6FE" src="/Programs.svg" width="104px" height="104px" />
         </div>
 
     </Holder>

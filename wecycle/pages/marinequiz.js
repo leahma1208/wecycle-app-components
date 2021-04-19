@@ -51,7 +51,7 @@ margin-right: 2rem;
 export default function QuizTime(){
     return (
         <QuizCont>
-            <Menu title="Quiz Time" borderbottom="none"></Menu>
+            <Menu routeTo="More" title="Quiz Time" borderbottom="none"></Menu>
             <Box>
             <Titleholder>
                 <Header text="Wendy the whale might mistakenly eat the plastic debris!" />
