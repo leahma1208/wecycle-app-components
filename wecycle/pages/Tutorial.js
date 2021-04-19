@@ -73,22 +73,27 @@ export default function Programs (){
                 </Infocontainer>
                 <Info>
                     <Bodytext 
+                    color="white"
                     Text="1. Start by introducing the regions page and click on one of the three options">
                     </Bodytext>
 
                     <Bodytext
+                    color="white"
                     Text="2. Next click on one of the three categories to learn about how plastic waste makes an impact">
                     </Bodytext>
 
                     <Bodytext
+                    color="white"
                     Text="3. Let the students practice reading as well as learn the affects, once they complete reading test their knowledge by clicking on the “what’s next?” button then the quiz time button.">
                     </Bodytext>
 
                     <Bodytext
+                    color="white"
                     Text="Afterwards, the students can browse through the rest of the application, or they can learn how to recycle in the how to help page, learn about local programs in the programs page, and visit other regions.">
                     </Bodytext>
 
                     <Bodytext
+                    color="white"
                     Text="To begin click the “Start App” button below!">
                     </Bodytext>
                     <Start routeTo="/regions" text="START APP" fontsize="16px" fontweight="bold" width="9rem" spacing="0.2rem"></Start>
