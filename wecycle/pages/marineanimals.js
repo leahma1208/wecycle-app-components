@@ -40,7 +40,7 @@ export default function MarineAnimals(){
     return (
         <Holder>
             <div>
-                <Menu routeTo="/marineenviro"title="Animals"></Menu>
+                <Menu routeTo="/Marine" title="Animals"></Menu>
             </div>
             <div className="container">
                 <Header text="How is plastic in Oceans affecting animals?"></Header>
@@ -52,7 +52,7 @@ export default function MarineAnimals(){
                     <Didyouknow informationtext="This sea creature isn’t alone: Over 700 species of marine animals have been reported to have eaten or been entangled in plastic."></Didyouknow>
                     <img id="image" src="/seaturtle.svg" width="150px"></img>
                 </div>
-                <Start text="What's next?" fontsize="18px" width="200px"></Start>
+                <Start routeTo="/More" text="What's next?" fontsize="18px" width="200px"></Start>
 
 
             </div>

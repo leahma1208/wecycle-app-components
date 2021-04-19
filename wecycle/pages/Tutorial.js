@@ -91,7 +91,7 @@ export default function Programs (){
                     <Bodytext
                     Text="To begin click the “Start App” button below!">
                     </Bodytext>
-                    <Start text="START APP" fontsize="16px" fontweight="bold" width="9rem" spacing="0.2rem"></Start>
+                    <Start routeTo="/regions" text="START APP" fontsize="16px" fontweight="bold" width="9rem" spacing="0.2rem"></Start>
                 </Info>
             </Bubbleholder>
 

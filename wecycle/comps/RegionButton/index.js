@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
 const RegionCont = styled.div`
-    margin-bottom:18px;
+    margin-top:2.188rem;
+    margin-bottom:1.125rem;
 `;
 
 const RegionInput = styled.button`

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const ButtonCont = styled.div`
 display: flex;
@@ -24,10 +25,12 @@ const Title = styled.h3 `
 
 const StudyOthers = ({
     title="Study Other Regions",
+    routeTo ="/regions"
     
 }) =>{
-    
-    return <ButtonCont>
+    const router = useRouter();
+
+    return <ButtonCont onClick={()=>router.push(routeTo)}>
         
         <Title>{title}</Title>
         <ForwardButton src="/ForwardButton.svg"/>

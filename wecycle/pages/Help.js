@@ -51,7 +51,7 @@ const BubbleBg = styled.div`
 export default function HowToHelp(){
     return <Helpcont>
                 <MenuHolder>
-                    <Menu title="How to help"/>
+                    <Menu routeTo="More" title="How to help"/>
                 </MenuHolder>
                 <HeaderHolder>
                     <Header text="Most Common Items Found in Oceans"/>

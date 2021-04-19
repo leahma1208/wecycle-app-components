@@ -62,7 +62,7 @@ export default function Programs (){
         <ProgramCont>
 
             <Headingholder id="border">
-                <Menu />
+                <Menu routeTo="More" />
             </Headingholder>
 
             <Titleholder>

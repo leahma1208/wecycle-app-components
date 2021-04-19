@@ -52,7 +52,7 @@ export default function OceanPeople(){
                     <Didyouknow informationtext="Other toxins in plastics are directly linked to cancers, birth defects, immune system problems, and childhood developmental issues."></Didyouknow>
                     <img id="image" src="/microplastic.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/marineenviro" text="What's next?" fontsize="18px" width="200px"></Start>
+                <Start routeTo="/More" text="What's next?" fontsize="18px" width="200px"></Start>
 
 
             </div>
