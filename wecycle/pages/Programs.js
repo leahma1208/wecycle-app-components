@@ -11,13 +11,15 @@ export default function Programs (){
     display:flex;
     width:100%;
     flex-direction:column;
+    justify-content:center;
+    align-tiems:center;
 
     #right{
         margin-left:40px;
     }
 
     #left {
-        margin-left:30px;
+
     }
     `;
 
@@ -44,6 +46,8 @@ export default function Programs (){
     const Infocontainer = styled.div`
         display:flex;
         width:100%;
+        justify-content:center;
+        align-tiems:center;
     `;
 
     const Logoholder = styled.div`
