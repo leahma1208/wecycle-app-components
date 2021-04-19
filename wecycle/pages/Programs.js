@@ -9,13 +9,16 @@ export default function Programs (){
 
     const ProgramCont = styled.div `
     display:flex;
+    width:100%;
     flex-direction:column;
 
-    #left {
-        margin:20px;
+    #right{
+        margin-left:40px;
     }
 
-   
+    #left {
+        margin-left:30px;
+    }
     `;
 
     const Headingholder = styled.div``;
@@ -40,11 +43,12 @@ export default function Programs (){
 
     const Infocontainer = styled.div`
         display:flex;
-        justify-content:center;
-
+        width:100%;
     `;
 
-    const Logoholder = styled.div``;
+    const Logoholder = styled.div`
+
+    `;
 
     const Information = styled.div``;
 
@@ -71,11 +75,11 @@ export default function Programs (){
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext bold="bold" Text="Great Canadian Shoreline Cleanup"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="Great Canadian Shoreline Cleanup"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="300px" Text="The Great Canadian Shoreline Cleanup is a national conservation program that provides Canadians the opportunity to take action in their communities wherever water meets land, one bit of trash at a time."/>
+                            <Bodytext textwidth="200px" Text="The Great Canadian Shoreline Cleanup is a national conservation program that provides Canadians the opportunity to take action in their communities wherever water meets land, one bit of trash at a time."/>
                         </Information>
 
                         <Information>
@@ -97,11 +101,11 @@ export default function Programs (){
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext bold="bold" Text="Plastic Oceans"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="Plastic Oceans"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="300px" Text="The purpose of the organization is to raise awareness about plastic pollution. Annually, over 300 million tons of plastic is produced. More than 90% of that plastic is not recycled! Distressingly, much of that plastic is ending up in our oceans. Together, we can create a healthier ocean for a healthier you."/>
+                            <Bodytext textwidth="200px"  Text="The purpose of the organization is to raise awareness about plastic pollution. Annually, over 300 million tons of plastic is produced. More than 90% of that plastic is not recycled! Distressingly, much of that plastic is ending up in our oceans. Together, we can create a healthier ocean for a healthier you."/>
                         </Information>
 
                         <Information>
@@ -122,11 +126,11 @@ export default function Programs (){
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext bold="bold" Text="Ocean Legacy Foundation"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="Ocean Legacy Foundation"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="300px" Text="The Ocean Legacy Foundation (OLF) is a Canadian based non-profit organization that was founded in 2013 with the goal to end ocean plastic waste. The foundation is led by co-founders Chloe Dubois and James Middleton, and is supported by a board of directors, technical advisory committee and hundreds of volunteers worldwide."/>
+                            <Bodytext textwidth="200px"  Text="The Ocean Legacy Foundation (OLF) is a Canadian based non-profit organization that was founded in 2013 with the goal to end ocean plastic waste. The foundation is led by co-founders Chloe Dubois and James Middleton, and is supported by a board of directors, technical advisory committee and hundreds of volunteers worldwide."/>
                         </Information>
 
                         <Information>

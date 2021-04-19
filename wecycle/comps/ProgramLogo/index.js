@@ -7,8 +7,8 @@ const ProgramCont = styled.div`
 
 const ProgramEllipse = styled.div`
     border-radius: 50%;
-    width: 130px;
-    height: 130px;
+    width: 89px;
+    height: 89px;
     background-color:${props=>props.circlebg};
     display:flex;
 `;
