@@ -29,8 +29,8 @@ export default function Regions() {
         </div>
         <div className="container1">
             <RegionButton routeTo="/Marine" text="Marine"/>
-            <RegionButton text="Urban Cities" bgcolor="#AFDDCD" ellipsecolor="#C0ECDD" src="/UrbanCity.svg" width="93px" height="93px"/>
-            <RegionButton text="Landfills" bgcolor="#FFEAAD" ellipsecolor="#FFFBF0" src="/Landfills.svg" width="104px" height="104px" />
+            <RegionButton routeTo="/UrbanCities" text="Urban Cities" bgcolor="#AFDDCD" ellipsecolor="#C0ECDD" src="/UrbanCity.svg" width="93px" height="93px"/>
+            <RegionButton routeTo="/Landfills" text="Landfills" bgcolor="#FFEAAD" ellipsecolor="#FFFBF0" src="/Landfills.svg" width="104px" height="104px" />
         </div>
 
     </Holder>
