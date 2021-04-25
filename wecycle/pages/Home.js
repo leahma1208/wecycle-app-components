@@ -40,7 +40,7 @@ export default function Regions() {
         <div className="bottom container">
             <Header text="Welcome!" weight="regular" color="white" fontfamily="Fredoka One" fontsize="30px"/>
             <Header text="Let's start learning" weight="regular" color="white" fontfamily="Fredoka One" fontsize="30px"/>
-            <Start routeTo="/regions"/>
+            <Start routeTo="/regions" fontfamily="'Fredoka One', cursive"/>
             <Tutorial routeTo="/Tutorial"/>
             <TutorialInfo/>
         </div>

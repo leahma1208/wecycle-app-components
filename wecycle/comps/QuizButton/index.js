@@ -37,18 +37,19 @@ const QuizButton = ({
     marginbottom="3rem",
     radius="10px",
     width="18em",
-    fontfamily="'Fredoka One', cursive",
+    fontfamily="'Poppins', sans-serif",
     fontsize="30px",
     text= "START",
     spacing="0.25rem",
     background = "#E87C4B",
     onClick=()=>{},
+    id="wrong"
 
 }) => {
     const router = useRouter();
 
     return (
-        <Container background = {background} onClick = {onClick} radius={radius} width={width} margintop={margintop} marginbottom={marginbottom}>
+        <Container id={id} background = {background} onClick = {onClick} radius={radius} width={width} margintop={margintop} marginbottom={marginbottom}>
         <Button>
                 <Text fontsize={fontsize} fontfamily={fontfamily} spacing={spacing}> 
                     <p>{text}</p>
