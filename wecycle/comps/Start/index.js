@@ -7,9 +7,12 @@ const Container = styled.div`
     background-color: #E87C4B;
     justify-content:center;
     width:${props=>props.width};
+    height:${props=>props.height};
     border-radius:${props=>props.radius};
     margin-top:${props=>props.margintop};
     margin-bottom:${props=>props.marginbottom};
+    margin-right:${props=>props.marginright};
+    margin-left:${props=>props.marginleft};
 
     
    :hover{
@@ -52,15 +55,18 @@ const Start = ({
     text= "START",
     spacing="0.25rem",
     routeTo="/Home",
-    padding="25px"
+    padding="25px",
+    height="auto",
+    marginright="0",
+    marginleft="0",
 
 }) => {
 
     const router = useRouter();
 
     return (
-        <Container className="start" onClick={()=>router.push(routeTo)} radius={radius} width={width} margintop={margintop} marginbottom={marginbottom}>
-        <Button fontsize={fontsize} fontfamily={fontfamily} spacing={spacing} padding={padding}>    
+        <Container className="start" onClick={()=>router.push(routeTo)} radius={radius} width={width} margintop={margintop} marginbottom={marginbottom} marginright={marginright} marginleft={marginleft} height={height} >
+        <Button fontsize={fontsize} fontfamily={fontfamily} spacing={spacing} padding={padding} >    
         {text}     
         </Button>
         </Container>

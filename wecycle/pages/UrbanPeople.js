@@ -32,7 +32,10 @@ const Holder = styled.div `
     display:flex;
     margin-left:30px;
 }
-
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 `
 
@@ -52,7 +55,10 @@ export default function UrbanPeople(){
                     <Didyouknow headercolor="#87CCB5" backcolor="#C0ECDD" informationtext="Precycle, based in Brooklyn, is a grocery store where, customers bring their own containers to fill up with any of the available locally-sourced and seasonal bulk products."></Didyouknow>
                     <img id="image" src="/store.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/UrbanEnvironment" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
+                <div className="grid">
+                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                </div>
 
 
             </div>

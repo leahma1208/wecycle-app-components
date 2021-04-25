@@ -33,6 +33,11 @@ const Holder = styled.div `
     margin-left:30px;
 }
 
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 `
 
@@ -52,7 +57,10 @@ export default function MarineEnviro(){
                     <Didyouknow informationtext="Scientists think that 8.8 million tons of plastic winds up in the ocean every year—that’s as if you stacked up five plastic grocery bags full of trash on top of each other on every foot of coastline in the world."></Didyouknow>
                     <img id="image" src="/envirofish.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/marineanimals" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
+                <div className="grid">
+                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                </div>
 
 
             </div>
