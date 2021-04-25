@@ -28,11 +28,15 @@ const Contholder = styled.div`
 const Menuholder = styled.div`
 display:flex;
 flex:1;
-justify-content: space-evenly;
+justify-content: center;
+position:relative;
 `
 
 const MenuButton = styled.img`
-    width:30px;
+    width:25px;
+    position:absolute;
+    left:25px;
+    top:37px;
 `;
 
 const Title = styled.h3 `
