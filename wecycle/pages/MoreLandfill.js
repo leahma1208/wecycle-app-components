@@ -16,17 +16,17 @@ const Holder = styled.div `
 
 `;
 
-export default function Regions() {
+export default function MoreLandfill() {
 
     return <Holder>
         <div>
-            <Menu routeTo="/Landfills" title="More"/>
+            <Menu routeTo="/Landfills" title="How to Help"/>
         </div>
         
         <div className="container1">
-            <RegionButton routeTo="/LandfillQuiz" bgcolor="#FEE9A8" ellipsecolor="#FFF7DE" text="Quiz time"/>
-            <RegionButton routeTo="/HelpLandfill" text="How to help" bgcolor="#FFE28A" ellipsecolor="#FFF7DE" src="/howToHelp.svg" width="93px" height="93px"/>
-            <RegionButton routeTo="/ProgramsLandfill" text="Programs" bgcolor="#F6D56E" ellipsecolor="#FFF7DE" src="/Programs.svg" width="104px" height="104px" />
+           
+            <RegionButton routeTo="/HelpLandfill" text="How to Recycle" bgcolor="#FFE28A" ellipsecolor="#FFF7DE" src="/howToHelp.svg" width="93px" height="93px"/>
+            <RegionButton routeTo="/ProgramsLandfill" text="Volunteer" bgcolor="#F6D56E" ellipsecolor="#FFF7DE" src="/Programs.svg" width="104px" height="104px" />
         </div>
 
     </Holder>

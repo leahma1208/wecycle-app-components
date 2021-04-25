@@ -52,7 +52,7 @@ export default function MarineAnimals(){
                     <Didyouknow informationtext="This sea creature isn’t alone: Over 700 species of marine animals have been reported to have eaten or been entangled in plastic."></Didyouknow>
                     <img id="image" src="/seaturtle.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/More" text="What's next?" fontsize="18px" width="200px"></Start>
+                <Start routeTo="/More" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
 
 
             </div>

@@ -5,6 +5,8 @@ import {useRouter} from 'next/router';
 const RegionCont = styled.div`
     margin-top:2.188rem;
     margin-bottom:1.125rem;
+    
+    
 `;
 
 const RegionInput = styled.button`
@@ -14,6 +16,10 @@ const RegionInput = styled.button`
     width: 329px;
     height: 200px;
     position:relative;
+   
+    :hover{
+        opacity:0.8;
+     }
 `;
 
 const RegionText= styled.p`

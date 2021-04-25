@@ -52,7 +52,7 @@ export default function LandfillEnvironment(){
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="These substances are polluting our land and groundwater!"></Didyouknow>
                     <img id="image" src="/ground.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/MoreLandfill" text="What's next?" fontsize="18px" width="200px"></Start>
+                <Start routeTo="/LandfillAnimals" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
 
 
             </div>

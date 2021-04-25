@@ -87,7 +87,7 @@ export default function Programs (){
                         </Information>
 
                         <Information>
-                            <Start width="150px" fontsize="16px" text="Apply Now"/>
+                        <Start fontsize="15px" width="150px" padding="10px" text="Apply Now"/>
                         </Information>
                     </Logoholder>
 {/* ======================================================= */}
@@ -113,7 +113,7 @@ export default function Programs (){
                         </Information>
 
                         <Information>
-                            <Start width="150px" fontsize="16px" text="Apply Now"/>
+                        <Start fontsize="15px" width="150px" padding="10px" text="Apply Now"/>
                         </Information>
                     </Logoholder>
 {/* ======================================================= */}
@@ -138,7 +138,7 @@ export default function Programs (){
                         </Information>
 
                         <Information>
-                            <Start width="150px" fontsize="16px" text="Apply Now"/>
+                        <Start fontsize="15px" width="150px" padding="10px" text="Apply Now"/>
                         </Information>
                     </Logoholder>
 {/* ======================================================= */}

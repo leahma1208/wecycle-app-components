@@ -52,7 +52,7 @@ export default function LandfillAnimals(){
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="The release of methane contributes to global warming. This means that there are no more polar bears, seals, and penguins."></Didyouknow>
                     <img id="image" src="/methane.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/MoreLandfill" text="What's next?" fontsize="18px" width="200px"></Start>
+                <Start routeTo="/MoreLandfill" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
 
 
             </div>
