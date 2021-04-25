@@ -32,7 +32,10 @@ const Holder = styled.div `
     display:flex;
     margin-left:30px;
 }
-
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 `
 
@@ -52,7 +55,10 @@ export default function LandfillEnvironment(){
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="These substances are polluting our land and groundwater!"></Didyouknow>
                     <img id="image" src="/ground.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/LandfillAnimals" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
+                <div className="grid">
+                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                </div>
 
 
             </div>

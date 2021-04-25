@@ -33,6 +33,11 @@ const Holder = styled.div `
     margin-left:30px;
 }
 
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 `
 
@@ -52,7 +57,10 @@ export default function OceanPeople(){
                     <Didyouknow informationtext="Other toxins in plastics are directly linked to cancers, birth defects, immune system problems, and childhood developmental issues."></Didyouknow>
                     <img id="image" src="/microplastic.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/marineenviro" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
+                <div className="grid">
+                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                </div>
 
 
             </div>

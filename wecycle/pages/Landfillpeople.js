@@ -32,7 +32,10 @@ const Holder = styled.div `
     display:flex;
     margin-left:30px;
 }
-
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 `
 
@@ -52,8 +55,10 @@ export default function LandfillPeople(){
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="Canada has over 10,000 landfill sites! Averaging around 600 acres each (in comparison, Monaco is  500 acres)"></Didyouknow>
                     <img id="image" src="/garbage.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/LandfillEnvironment" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
-
+                <div className="grid">
+                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                </div>
 
             </div>
 
