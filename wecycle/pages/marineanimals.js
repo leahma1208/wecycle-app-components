@@ -37,6 +37,23 @@ const Holder = styled.div `
     grid-template-columns: 1fr 1fr;
 }
 
+.moving {
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 3s infinite;
+    animation-direction:reverse;
+}
+@keyframes slideIn {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 `
 
 export default function MarineAnimals(){
@@ -53,7 +70,7 @@ export default function MarineAnimals(){
                 <Bodytext marginbottom="20px;"Text="A sea turtle swims through the water and spots a white blob floating near the surface. “Yum!” it thinks. “A jellyfish!” Chasing after its dinner, the turtle swallows the item. But the floating blob isn’t a jelly—it’s a plastic bag that could make the sea turtle sick. "></Bodytext>
                 <div className="row">
                     <Didyouknow informationtext="This sea creature isn’t alone: Over 700 species of marine animals have been reported to have eaten or been entangled in plastic."></Didyouknow>
-                    <img id="image" src="/seaturtle.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/seaturtle.svg" width="150px"></img>
                 </div>
                 <div className="grid">
                     <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>

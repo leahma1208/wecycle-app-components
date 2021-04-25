@@ -37,6 +37,23 @@ const Holder = styled.div `
     grid-template-columns: 1fr 1fr;
 }
 
+.moving {
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 3s infinite;
+    animation-direction:reverse;
+}
+@keyframes slideIn {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 `
 
 export default function LandfillEnvironment(){
@@ -53,11 +70,11 @@ export default function LandfillEnvironment(){
                 <Bodytext marginbottom="20px;"Text="Leachate is a liquid formed when water is filtered through waste decomposed from landfills. Wastes contain toxic substances. Electronic waste contains mercury, cadmium, PVC, acids, lead, and more."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="These substances are polluting our land and groundwater!"></Didyouknow>
-                    <img id="image" src="/ground.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/ground.svg" width="150px"></img>
                 </div>
                 <div className="grid">
-                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/LandfillQuiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/HelpLandfill" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
 
 

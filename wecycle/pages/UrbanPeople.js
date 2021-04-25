@@ -37,6 +37,23 @@ const Holder = styled.div `
     grid-template-columns: 1fr 1fr;
 }
 
+.moving {
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 3s infinite;
+    animation-direction:reverse;
+}
+@keyframes slideIn {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 `
 
 export default function UrbanPeople(){
@@ -53,11 +70,11 @@ export default function UrbanPeople(){
                 <Bodytext marginbottom="20px;"Text="plastic and other packaging waste makes up around 30 percent of total U.S. waste annually. Of the 34.5 million tons of plastic waste generated each year, only 9 percent is recycled, with most of the recyclable waste shipped to other countries for processing. However, the receiving countries often lack the infrastructure to properly process these materials, which leads to U.S. waste ending up in landfills and ecosystems across the globe."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#87CCB5" backcolor="#C0ECDD" informationtext="Precycle, based in Brooklyn, is a grocery store where, customers bring their own containers to fill up with any of the available locally-sourced and seasonal bulk products."></Didyouknow>
-                    <img id="image" src="/store.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/store.svg" width="150px"></img>
                 </div>
                 <div className="grid">
-                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/UrbanQuiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/HelpUrban" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
 
 

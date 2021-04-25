@@ -38,6 +38,24 @@ const Holder = styled.div `
     grid-template-columns: 1fr 1fr;
 }
 
+.moving {
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 3s infinite;
+    animation-direction:reverse;
+}
+@keyframes slideIn {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
 
 `
 
@@ -55,7 +73,7 @@ export default function OceanPeople(){
                 <Bodytext marginbottom="20px;"Text="There are different types of ways that plastic is dangerous for humans. Direct toxicity from plastics comes from lead, cadmium, and mercury. These toxins have also been found in many fish in the ocean, which is very dangerous for humans. Diethylhexyl phthalate contained in some plastics, is a toxic carcinogen, meaning that it  has the ability to cause cancer.  "></Bodytext>
                 <div className="row">
                     <Didyouknow informationtext="Other toxins in plastics are directly linked to cancers, birth defects, immune system problems, and childhood developmental issues."></Didyouknow>
-                    <img id="image" src="/microplastic.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/microplastic.svg" width="150px"></img>
                 </div>
                 <div className="grid">
                     <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>

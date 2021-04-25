@@ -37,6 +37,23 @@ const Holder = styled.div `
     grid-template-columns: 1fr 1fr;
 }
 
+.moving {
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 3s infinite;
+    animation-direction:reverse;
+}
+@keyframes slideIn {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 `
 
 export default function LandfillAnimals(){
@@ -53,11 +70,11 @@ export default function LandfillAnimals(){
                 <Bodytext marginbottom="20px;"Text="The decomposition of organic waste in landfills produces toxic gasses like methane which is 25 times more powerful than carbon dioxide. Methane greatly contributes to our climate change by trapping heat in the atmosphere."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="The release of methane contributes to global warming. This means that there are no more polar bears, seals, and penguins."></Didyouknow>
-                    <img id="image" src="/methane.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/methane.svg" width="150px"></img>
                 </div>
                 <div className="grid">
-                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/LandfillQuiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/HelpLandfill" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
 
 

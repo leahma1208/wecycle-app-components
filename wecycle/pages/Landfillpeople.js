@@ -37,6 +37,23 @@ const Holder = styled.div `
     grid-template-columns: 1fr 1fr;
 }
 
+.moving {
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 3s infinite;
+    animation-direction:reverse;
+}
+@keyframes slideIn {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 `
 
 export default function LandfillPeople(){
@@ -53,11 +70,11 @@ export default function LandfillPeople(){
                 <Bodytext marginbottom="20px;"Text="Each Canadian produces 720 kilograms of waste per year, which is about 10 times more than that produced by six African countries. Surprisingly, our production is 7 percent higher than the per capita production of garbage in the USA, which has caused almost an over-consumer impact."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="Canada has over 10,000 landfill sites! Averaging around 600 acres each (in comparison, Monaco is  500 acres)"></Didyouknow>
-                    <img id="image" src="/garbage.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/garbage.svg" width="150px"></img>
                 </div>
                 <div className="grid">
-                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/LandfillQuiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/HelpLandfill" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
 
             </div>
