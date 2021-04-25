@@ -5,6 +5,7 @@ import Header from '../comps/Header';
 import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
+import BottomBar from '../comps/BottomBar';
 
 
 const Holder = styled.div `
@@ -20,12 +21,13 @@ const Holder = styled.div `
     background-color: #FEE9A8;
     border-radius: 5rem 5rem 0rem 0rem;
     min-width: 25rem;
+    margin-top: 20px;
 }
 
 .row {
     display:flex;
     justify-content:center
-    width:100%;
+    width: 100%;
 }
 
 #image {
@@ -35,6 +37,7 @@ const Holder = styled.div `
 .grid {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom:60px;
 }
 
 .moving {
@@ -63,23 +66,23 @@ export default function LandfillEnvironment(){
                 <Menu routeTo="/Landfills"title="Environment"></Menu>
             </div>
             <div className="container">
-                <Header text="How is plastic in landfill affecting the Environment?"></Header>
+                <Header left="10px" text="How is plastic in landfill affecting the Environment?"></Header>
             </div>
             <div id="box" className="container">
                 <Header text="Toxins/Leachate" margintop="50px;"></Header>
                 <Bodytext marginbottom="20px;"Text="Leachate is a liquid formed when water is filtered through waste decomposed from landfills. Wastes contain toxic substances. Electronic waste contains mercury, cadmium, PVC, acids, lead, and more."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="These substances are polluting our land and groundwater!"></Didyouknow>
-                    <img className="moving" id="image" src="/ground.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/ground.svg" width="100px"></img>
                 </div>
                 <div className="grid">
-                    <Start routeTo="/LandfillQuiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/HelpLandfill" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/LandfillQuiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/MoreLandfill" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
-
-
             </div>
-
+            <div>
+                <BottomBar routeTo1="/Landfills"></BottomBar>
+            </div>
         </Holder>
     )
 }

@@ -4,17 +4,16 @@ import styled from 'styled-components';
 const Container = styled.div`
     display: flex;
     justify-content: center;
-    width:15em;
 `;
 
 const Text = styled.p `
     font-size: 16px;
     font-weight: 400;
     color: black;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.05em;
 `;
 
-const Info = styled.img`
+const Icon = styled.img`
     display: ${props=>props.icon};
 `;
 
@@ -24,7 +23,7 @@ const ImgText = ({
 }) =>{
     
     return <Container>
-        <Info icon={icon} src="/facemask.svg"/>
+        <Icon icon={icon} src="/facemask.svg"/>
         <Text>{text}</Text>
     </Container>
 }

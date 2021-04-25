@@ -96,7 +96,7 @@ export default function Programs (){
                     color="white"
                     Text="To begin click the “Start App” button below!">
                     </Bodytext>
-                    <Start routeTo="/regions" text="START APP" fontsize="16px" fontweight="bold" width="9rem" spacing="0.2rem"></Start>
+                    <Start routeTo="/regions" text="START APP" fontsize="20px" fontweight="bold" width="15rem" spacing="0.2rem" fontfamily="Fredoka One"></Start>
                 </Info>
             </Bubbleholder>
 

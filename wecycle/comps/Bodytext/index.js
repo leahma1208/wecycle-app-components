@@ -7,6 +7,7 @@ const Container = styled.div `
     width:${props=>props.textwidth};
     font-weight:${props=>props.fontweight};
     color: ${props=>props.color};
+    margin-top: 0px;
     margin-bottom:${props=>props.marginbottom}
 `
 

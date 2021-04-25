@@ -9,6 +9,7 @@ import StudyOthers from '../comps/StudyOthers'
 import React, {useState} from 'react';
 import Marinequiz from '../comps/Landfillquiz';
 import Flag from '../comps/Flags'
+import BottomBar from '../comps/BottomBar';
 
 const QuizCont = styled.div`
 
@@ -136,6 +137,7 @@ export default function QuizTimeUrban({
                 routeTo={route}
                 />
             </StudyMore>
+            <BottomBar routeTo1="/LandfillAnimals"></BottomBar>
         </QuizCont>
     )
 }
