@@ -9,6 +9,15 @@ justify-content: space-evenly;
 border-bottom: ${props=>props.borderbottom};
 flex-direction:column;
 
+.regionbutton:hover {
+    background-color:#5769DF;
+    color:white;
+}
+
+.sub:hover {
+    color:#5769DF;
+}
+
   
 `;
 
@@ -248,41 +257,41 @@ if(opensub3){
             <HomeButton homebutton={home}/>
         </Menuholder>
         <Contholder width={width} height={height}>
-            <RegionHolder onClick={()=>setOpensub(!opensub)}>
+            <RegionHolder className="regionbutton" onClick={()=>setOpensub(!opensub)}>
                 <Marine onClick={()=>router.push(routeToMarine)} className="region" >Marine</Marine>
                 <Arrow1 rotate={rotate} src="/right-arrow.svg"></Arrow1>
             </RegionHolder>
                 <Infoholder subheight={subheight} subwidth={subwidth} display={display}>
-                    <People onClick={()=>router.push(routeToMarinePeople)} >People</People>
-                    <Environment onClick={()=>router.push(routeToMarineEnvironment)} >Environment</Environment>
-                    <Animals onClick={()=>router.push(routeToMarineAnimals)} >Animals</Animals>
-                    <Howto onClick={()=>router.push(routeToMarineHowto)}>How to recycle</Howto>
-                    <Volunteer onClick={()=>router.push(routeToMarineVolunteer)} >Volunteer</Volunteer>
-                    <Quitime onClick={()=>router.push(routeToMarineQuiz)} >Quiz Time</Quitime>
+                    <People className="sub" onClick={()=>router.push(routeToMarinePeople)} >People</People>
+                    <Environment className="sub"  onClick={()=>router.push(routeToMarineEnvironment)} >Environment</Environment>
+                    <Animals className="sub"  onClick={()=>router.push(routeToMarineAnimals)} >Animals</Animals>
+                    <Howto className="sub"  onClick={()=>router.push(routeToMarineHowto)}>How to recycle</Howto>
+                    <Volunteer className="sub"  onClick={()=>router.push(routeToMarineVolunteer)} >Volunteer</Volunteer>
+                    <Quitime className="sub"  onClick={()=>router.push(routeToMarineQuiz)} >Quiz Time</Quitime>
                 </Infoholder>
-            <RegionHolder2 onClick={()=>setOpensub2(!opensub2)}>
+            <RegionHolder2 className="regionbutton" onClick={()=>setOpensub2(!opensub2)}>
                 <UrbanCities className="region" onClick={()=>router.push(routeToUrban)} >Urban Cities</UrbanCities>
                 <Arrow2 rotate2={rotate2} src="/right-arrow.svg"></Arrow2>
             </RegionHolder2 >
                 <Infoholder2 subheight2={subheight2} subwidth2={subwidth2} display2={display2} >
-                    <People onClick={()=>router.push(routeToUrbanPeople)} >People</People>
-                    <Environment onClick={()=>router.push(routeToUrbanEnvironment)}>Environment</Environment>
-                    <Animals onClick={()=>router.push(routeToUrbanAnimals)}>Animals</Animals>
-                    <Howto onClick={()=>router.push(routeToUrbanHowto)}>How to recycle</Howto>
-                    <Volunteer onClick={()=>router.push(routeToUrbanVolunteer)}>Volunteer</Volunteer>
-                    <Quitime onClick={()=>router.push(routeToUrbanQuiz)}>Quiz Time</Quitime>
+                    <People className="sub"  onClick={()=>router.push(routeToUrbanPeople)} >People</People>
+                    <Environment className="sub"  onClick={()=>router.push(routeToUrbanEnvironment)}>Environment</Environment>
+                    <Animals className="sub"  onClick={()=>router.push(routeToUrbanAnimals)}>Animals</Animals>
+                    <Howto className="sub"  onClick={()=>router.push(routeToUrbanHowto)}>How to recycle</Howto>
+                    <Volunteer className="sub"  onClick={()=>router.push(routeToUrbanVolunteer)}>Volunteer</Volunteer>
+                    <Quitime className="sub" onClick={()=>router.push(routeToUrbanQuiz)}>Quiz Time</Quitime>
                 </Infoholder2>
-            <RegionHolder3 onClick={()=>setOpensub3(!opensub3)}>
+            <RegionHolder3 className="regionbutton" onClick={()=>setOpensub3(!opensub3)}>
                 <Landfill onClick={()=>router.push(routeToLandfill)} className="region" >Landfill</Landfill>
                 <Arrow3 rotate3={rotate3} src="/right-arrow.svg"></Arrow3>
             </RegionHolder3>
             <Infoholder3 subheight3={subheight3} subwidth3={subwidth3} display3={display3}>
-                <People onClick={()=>router.push(routeToLandfillPeople)} >People</People>
-                <Environment onClick={()=>router.push(routeToLandfillEnvironment)}>Environment</Environment>
-                <Animals onClick={()=>router.push(routeToLandfillAnimals)}>Animals</Animals>
-                <Howto onClick={()=>router.push(routeToLandfillHowto)}>How to recycle</Howto>
-                <Volunteer onClick={()=>router.push(routeToLandfillVolunteer)}>Volunteer</Volunteer>
-                <Quitime onClick={()=>router.push(routeToLandfillQuiz)}>Quiz Time</Quitime>
+                <People className="sub" onClick={()=>router.push(routeToLandfillPeople)} >People</People>
+                <Environment className="sub" onClick={()=>router.push(routeToLandfillEnvironment)}>Environment</Environment>
+                <Animals className="sub" onClick={()=>router.push(routeToLandfillAnimals)}>Animals</Animals>
+                <Howto className="sub" onClick={()=>router.push(routeToLandfillHowto)}>How to recycle</Howto>
+                <Volunteer className="sub" onClick={()=>router.push(routeToLandfillVolunteer)}>Volunteer</Volunteer>
+                <Quitime className="sub" onClick={()=>router.push(routeToLandfillQuiz)}>Quiz Time</Quitime>
             </Infoholder3>
 
             {/* <Marine className="region" >Marine</Marine>
