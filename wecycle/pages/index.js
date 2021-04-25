@@ -13,6 +13,7 @@ import StudyOthers from '../comps/StudyOthers';
 import Bodytext from '../comps/Bodytext';
 import Flags from '../comps/Flags';
 import Marinequiz from '../comps/Marinequiz';
+import BottomBar from '../comps/BottomBar';
 
 
 const Holder = styled.div `
@@ -65,8 +66,10 @@ export default function Home() {
     </div>
     <div className="container1">
       <Marinequiz />
+    </div>    
+    <div className="container1">
+      <BottomBar />
     </div>
-
     
   
   </Holder>

@@ -5,6 +5,7 @@ import Header from '../comps/Header';
 import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
+import BottomBar from '../comps/BottomBar';
 
 
 const Holder = styled.div `
@@ -16,10 +17,11 @@ const Holder = styled.div `
 }
 
 #box {
-    height: auto;
+    height:auto;
+    width:100%;
     background-color: #ADBAFF;
     border-radius: 5rem 5rem 0rem 0rem;
-    min-width: 25rem;
+    margin-top: 20px;
 }
 
 .row {
@@ -36,6 +38,7 @@ const Holder = styled.div `
 .grid {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom:60px;
 }
 
 .moving {
@@ -66,21 +69,22 @@ export default function OceanPeople(){
                 <Menu routeTo="Marine"title="People"></Menu>
             </div>
             <div className="container">
-                <Header text="How are plastics in oceans affecting people?"></Header>
+                <Header left="5px" text="How are plastics in oceans affecting people?"></Header>
             </div>
             <div id="box" className="container">
                 <Header text="Plastic affecting human health" margintop="50px;"></Header>
                 <Bodytext marginbottom="20px;"Text="There are different types of ways that plastic is dangerous for humans. Direct toxicity from plastics comes from lead, cadmium, and mercury. These toxins have also been found in many fish in the ocean, which is very dangerous for humans. Diethylhexyl phthalate contained in some plastics, is a toxic carcinogen, meaning that it  has the ability to cause cancer.  "></Bodytext>
                 <div className="row">
                     <Didyouknow informationtext="Other toxins in plastics are directly linked to cancers, birth defects, immune system problems, and childhood developmental issues."></Didyouknow>
-                    <img className="moving" id="image" src="/microplastic.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/microplastic.svg" width="90px"></img>
                 </div>
                 <div className="grid">
-                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/Help" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
-
-
+            </div>
+            <div>
+                <BottomBar routeTo1="/Marine"></BottomBar>
             </div>
 
         </Holder>

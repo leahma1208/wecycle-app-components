@@ -5,6 +5,7 @@ import Header from '../comps/Header';
 import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
+import BottomBar from '../comps/BottomBar';
 
 
 const Holder = styled.div `
@@ -16,10 +17,11 @@ const Holder = styled.div `
 }
 
 #box {
-    height: auto;
+    height:auto;
+    width:100%;
     background-color: #ADBAFF;
     border-radius: 5rem 5rem 0rem 0rem;
-    min-width: 25rem;
+    margin-top: 20px;
 }
 
 .row {
@@ -36,7 +38,9 @@ const Holder = styled.div `
 .grid {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom:60px;
 }
+
 
 .moving {
     position: relative;
@@ -72,13 +76,15 @@ export default function MarineEnviro(){
                 <Bodytext marginbottom="20px;"Text="How does it get into the sea? Plastic left on the ground as litter often blows into creeks and rivers, eventually ending up in the ocean. And because plastic trash is different from other types of waste—it doesn’t decompose back into nature like an apple core or a piece of paper—it stays in the ocean forever. "></Bodytext>
                 <div className="row">
                     <Didyouknow informationtext="Scientists think that 8.8 million tons of plastic winds up in the ocean every year—that’s as if you stacked up five plastic grocery bags full of trash on top of each other on every foot of coastline in the world."></Didyouknow>
-                    <img className="moving" id="image" src="/envirofish.svg" width="150px"></img>
+                    <img className="moving" id="image" src="/envirofish.svg" width="80px"></img>
                 </div>
                 <div className="grid">
-                    <Start routeTo="/marinequiz" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/Help" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/Help" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
-
+                <div>
+                    <BottomBar routeTo1="/Marine"></BottomBar>
+                </div>
 
             </div>
 

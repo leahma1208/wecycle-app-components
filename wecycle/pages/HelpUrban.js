@@ -3,13 +3,16 @@ import styled from 'styled-components';
 import Menu from '../comps/Menu';
 import Header from '../comps/Header';
 import Bodytext from "../comps/Bodytext";
+import BottomBar from '../comps/BottomBar';
 
 const Helpcont = styled.div`
     display:flex;
     flex-direction:column;
     width:100%;
 `;
-const MenuHolder = styled.div``;
+const MenuHolder = styled.div`
+    width: 100%;
+`;
 
 const HeaderHolder = styled.div`
     display:flex;
@@ -26,7 +29,7 @@ const ItemsCont = styled.div`
 `;
 const ItemsHolder = styled.div`
     display:flex;
-
+    max-width: 26rem;
 `;
 const Items = styled.img`
     margin-left: 1.563rem;
@@ -38,10 +41,11 @@ const BubbleBg = styled.div`
     flex-direction:column;
     justify-content:center;
     width:100%;
+    min-width: 25rem;
     background-color:#AFDDCE;
     height:auto;
-    padding-top:1.875rem;
-    padding-bottom:1.875rem;
+    padding-top:2rem;
+    padding-bottom:6rem;
     border-radius: 5rem 5rem 0rem 0rem;
 `;
 
@@ -148,5 +152,6 @@ export default function HowToHelp(){
                         </ItemsHolder>
                     </ItemsCont>
                 </BubbleBg>
+                <BottomBar routeTo1="/MoreUrban"></BottomBar>
         </Helpcont>
 }

@@ -4,6 +4,7 @@ import Header from "../comps/Header";
 import ProgramLogo from "../comps/ProgramLogo";
 import Bodytext from "../comps/Bodytext";
 import Start from '../comps/Start';
+import BottomBar from '../comps/BottomBar';
 
 export default function Programs (){
 
@@ -40,6 +41,8 @@ export default function Programs (){
         background-color:#AFDDCE;
         height:auto;
         padding-top:30px;
+        margin-top: 15px;
+        margin-bottom: 60px;
         border-radius: 5rem 5rem 0rem 0rem;
     `
 
@@ -87,7 +90,7 @@ export default function Programs (){
                         </Information>
 
                         <Information>
-                        <Start fontsize="15px" width="150px" padding="10px" text="Apply Now"/>
+                        <Start margintop="0.25rem" spacing="0rem" text="Apply Now" width="10rem" padding="5px" fontsize="16px"/>
                         </Information>
                     </Logoholder>
 {/* ======================================================= */}
@@ -113,7 +116,7 @@ export default function Programs (){
                         </Information>
 
                         <Information>
-                        <Start fontsize="15px" width="150px" padding="10px" text="Apply Now"/>
+                        <Start margintop="0.25rem" spacing="0rem" text="Apply Now" width="10rem" padding="5px" fontsize="16px"/>
                         </Information>
                     </Logoholder>
 {/* ======================================================= */}
@@ -138,17 +141,16 @@ export default function Programs (){
                         </Information>
 
                         <Information>
-                        <Start fontsize="15px" width="150px" padding="10px" text="Apply Now"/>
+                        <Start margintop="0.25rem" spacing="0rem" text="Apply Now" width="10rem" padding="5px" fontsize="16px"/>
                         </Information>
                     </Logoholder>
 {/* ======================================================= */}
                 </Infocontainer>
 
-
             </Bubbleholder>
 
+            <BottomBar routeTo1="/MoreUrban"></BottomBar>
 
-            
         </ProgramCont>
 
     )

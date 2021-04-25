@@ -9,6 +9,7 @@ import StudyOthers from '../comps/StudyOthers'
 import React, {useState} from 'react';
 import Marinequiz from '../comps/Marinequiz'
 import { flushSync } from 'react-dom';
+import BottomBar from '../comps/BottomBar';
 
 const QuizCont = styled.div`
 
@@ -136,6 +137,7 @@ export default function QuizTime({
                 routeTo={route}
                 />
             </StudyMore>
+            <BottomBar routeTo1="/marineanimals"></BottomBar>
         </QuizCont>
     )
 }
