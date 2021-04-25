@@ -52,7 +52,7 @@ export default function UrbanPeople(){
                     <Didyouknow headercolor="#87CCB5" backcolor="#C0ECDD" informationtext="Precycle, based in Brooklyn, is a grocery store where, customers bring their own containers to fill up with any of the available locally-sourced and seasonal bulk products."></Didyouknow>
                     <img id="image" src="/store.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/MoreUrban" text="What's next?" fontsize="18px" width="200px"></Start>
+                <Start routeTo="/UrbanEnvironment" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
 
 
             </div>

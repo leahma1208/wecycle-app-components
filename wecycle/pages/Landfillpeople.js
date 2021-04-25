@@ -52,7 +52,7 @@ export default function LandfillPeople(){
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="Canada has over 10,000 landfill sites! Averaging around 600 acres each (in comparison, Monaco is  500 acres)"></Didyouknow>
                     <img id="image" src="/garbage.svg" width="150px"></img>
                 </div>
-                <Start routeTo="/MoreLandfill" text="What's next?" fontsize="18px" width="200px"></Start>
+                <Start routeTo="/LandfillEnvironment" text="What's next?" fontsize="15px" width="180px" padding="10px"></Start>
 
 
             </div>

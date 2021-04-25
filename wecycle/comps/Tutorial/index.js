@@ -9,16 +9,17 @@ const Container = styled.div`
     width:18em;
     border-radius:10px;
     background-color: ${props=>props.backcolor};
+
+    :hover{
+        background-color:#98A4F3;
+    }
+      
 `
 
 const Button = styled.div`
     display:flex;
     flex-direction:column;
     width:100%;
-`
-
-const Text = styled.p `
-    background-color:#8492ED;
     border-radius:10px;
     margin:0.1rem;
     color:${props=>props.textcolor};
@@ -28,7 +29,11 @@ const Text = styled.p `
     font-size: 16px;
     justify-content:center;
     align-items:center;
+    padding:15px;
+    
 `
+
+
 
 
 const Tutorial = ({
@@ -42,11 +47,11 @@ const Tutorial = ({
     const router = useRouter();
 
     return (
-        <Container onClick={()=>router.push(routeTo)}>
-        <Button backcolor={backcolor}>
-            <Text textcolor={textcolor}> 
-                <p>{text}</p>
-            </Text>
+        <Container className="tutorial" onClick={()=>router.push(routeTo)}>
+        <Button backcolor={backcolor} textcolor={textcolor}>
+          
+                {text}
+            
         </Button>
         </Container>
     )

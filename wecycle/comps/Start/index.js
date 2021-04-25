@@ -10,14 +10,18 @@ const Container = styled.div`
     border-radius:${props=>props.radius};
     margin-top:${props=>props.margintop};
     margin-bottom:${props=>props.marginbottom};
+
+    
+   :hover{
+       background-color:#E8936C;
+   }
+
+
 `
 const Button = styled.div`
     display:flex;
     flex-direction:column;
-`
-
-const Text = styled.p `
-    background-color:#E87C4B;
+    padding:${props=>props.padding};
     margin:0.5rem;
     color:white;
     display:flex;
@@ -26,7 +30,16 @@ const Text = styled.p `
     font-size: ${props=>props.fontsize};
     justify-content:center;
     align-items:center;
+
+    
+    :hover{
+        background-color:#E8936C;
+    }
+    
+    
 `
+
+
 
 
 const Start = ({
@@ -39,17 +52,16 @@ const Start = ({
     text= "START",
     spacing="0.25rem",
     routeTo="/Home",
+    padding="25px"
 
 }) => {
 
     const router = useRouter();
 
     return (
-        <Container onClick={()=>router.push(routeTo)} radius={radius} width={width} margintop={margintop} marginbottom={marginbottom}>
-        <Button>
-                <Text fontsize={fontsize} fontfamily={fontfamily} spacing={spacing}> 
-                    <p>{text}</p>
-                </Text>
+        <Container className="start" onClick={()=>router.push(routeTo)} radius={radius} width={width} margintop={margintop} marginbottom={marginbottom}>
+        <Button fontsize={fontsize} fontfamily={fontfamily} spacing={spacing} padding={padding}>    
+        {text}     
         </Button>
         </Container>
     )
