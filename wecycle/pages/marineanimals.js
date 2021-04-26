@@ -13,13 +13,24 @@ const Holder = styled.div `
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center
+    align-items:center;
+    width:100%;
+
+
+    .bottom {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
 }
 
 #box {
+    display:flex;
     height: auto;
+    width:100%;
     background-color: #ADBAFF;
     border-radius: 5rem 5rem 0rem 0rem;
+    margin:0px;
 }
 
 .row {
@@ -78,7 +89,7 @@ export default function MarineAnimals(){
                     <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
                     <Start routeTo="/Help" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
-                <div>
+                <div className="bottom">
                     <BottomBar routeTo1="/Marine"></BottomBar>
                 </div>
 
