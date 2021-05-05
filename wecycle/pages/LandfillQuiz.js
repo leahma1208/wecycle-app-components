@@ -33,8 +33,9 @@ const Titleholder = styled.div`
         align-items: center;
     `;
 
-const Quizimg = styled.img`
-
+const Flags = styled.div`
+    display:flex;
+    flex-direction:row;
 `;
 
 const ButtonHolder = styled.div`
@@ -81,7 +82,7 @@ export default function QuizTimeUrban({
 
 
     const HandleGarbage = () => {
-        setTexts("Incorrect! Globally, more than 240 wildlife species, are known to have ingested plastic.")
+        setTexts("Incorrect! Canadians produce a lot of plastic waste; an estimated 3.3 million tonnes per year.")
         setTitle("Try Again")
         setSource("/reload.svg")
         setRoute("/marinequiz")
@@ -89,14 +90,14 @@ export default function QuizTimeUrban({
         shaking()
     }
     const HandleRecycle = ({}) => {
-        setTexts("Correct!")
+        setTexts("Correct! Canada's Landfill is around the size of Monaco.")
         setTitle("Study Other Regions")
         setSource("/ForwardButton.svg")
         setRoute("/regions")
         setBackground("#4ACE8F")
     }
     const HandleCompost = () => {
-        setTexts("Incorrect! Globally, more than 240 wildlife species, are known to have ingested plastic.")
+        setTexts("Incorrect! Canadians produce a lot of plastic waste; an estimated 3.3 million tonnes per year.")
         setTitle("Try Again")
         setSource("/reload.svg")
         setRoute("/marinequiz")
@@ -118,7 +119,11 @@ export default function QuizTimeUrban({
                 <Bodytext 
                 Text={texts}
                 textwidth="250px"/>
-
+                <Flags>
+                    <Flag imagesize="105px" image="/newzealand.png" country="New Zealand"/>
+                    <Flag image="/italy.png" country="Italy"/>
+                    <Flag/>
+                </Flags>
             </Titleholder>
             </Box>
 

@@ -79,7 +79,7 @@ export default function QuizTimeUrban({
 
 
     const HandleGarbage = () => {
-        setTexts("Incorrect! Globally, more than 240 wildlife species, are known to have ingested plastic.")
+        setTexts("Incorrect! One third of deaths from stroke, lung cancer and heart disease are due to air pollution.")
         setTitle("Try Again")
         setSource("/reload.svg")
         setRoute("/marinequiz")
@@ -87,14 +87,14 @@ export default function QuizTimeUrban({
         shaking()
     }
     const HandleRecycle = ({}) => {
-        setTexts("Correct!")
+        setTexts("Correct! Air pollution kills an estimated seven million people worldwide every year.")
         setTitle("Study Other Regions")
         setSource("/ForwardButton.svg")
         setRoute("/regions")
         setBackground("#4ACE8F")
     }
     const HandleCompost = () => {
-        setTexts("Incorrect! Globally, more than 240 wildlife species, are known to have ingested plastic.")
+        setTexts("Incorrect! One third of deaths from stroke, lung cancer and heart disease are due to air pollution.")
         setTitle("Try Again")
         setSource("/reload.svg")
         setRoute("/marinequiz")
