@@ -55,10 +55,9 @@ const Urbanquiz = ({
 })=>{
     return (
         <Container>
-                <QuizButton id="wrong" onClick={onGarbageClick}  text="2.4 million" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
-                <QuizButton onClick={onRecycleClick}  text="2,400" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
-                <QuizButton id="wrong" onClick={onCompostClick}  text="20,400" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
-            
+             <QuizButton onClick={onRecycleClick}  text="7 million" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
+                <QuizButton id="wrong" onClick={onGarbageClick}  text="1 million" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
+                <QuizButton id="wrong" onClick={onCompostClick}  text="23 million" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
         </Container>
     )
 }

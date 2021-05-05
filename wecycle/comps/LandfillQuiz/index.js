@@ -56,8 +56,8 @@ const Landfillquiz = ({
     return (
         <Container>
                 <QuizButton id="wrong" onClick={onGarbageClick}  text="New Zealand" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
-                <QuizButton id="wrong" onClick={onRecycleClick}  text="Italy" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
-                <QuizButton onClick={onCompostClick}  text="Monaco" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
+                <QuizButton id="wrong" onClick={onCompostClick}  text="Italy" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
+                <QuizButton onClick={onRecycleClick}  text="Monaco" width="15rem" fontsize="19px" spacing="0.15rem" margintop="0" marginbottom="1.5rem"/>
             
         </Container>
     )
