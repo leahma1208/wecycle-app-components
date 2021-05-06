@@ -9,12 +9,18 @@ import BottomBar from '../comps/BottomBar';
 
 
 const Holder = styled.div `
+display:flex;
+flex-direction:column;
+
 .container {
     display:flex;
+    justify-content:center;
+    align-items:center;
     flex-direction:column;
     justify-content:center;
     align-items:center
 }
+
 
 #box {
     height:auto;
@@ -46,14 +52,21 @@ const Holder = styled.div `
     position: relative;
     overflow: hidden;
     animation: slideIn 3s infinite;
-    animation-direction:reverse;
 }
+
+#bar-holder {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:red;
+}
+
 @keyframes slideIn {
     0%{
         transform: rotate(0deg);
     }
     50%{
-        transform: rotate(7deg);
+        transform: rotate(15deg);
     }
     100%{
         transform: rotate(0deg);
@@ -82,7 +95,7 @@ export default function MarineEnviro(){
                     <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
                     <Start routeTo="/Help" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
-                <div>
+                <div id="bar-holder">
                     <BottomBar routeTo1="/Marine"></BottomBar>
                 </div>
 
