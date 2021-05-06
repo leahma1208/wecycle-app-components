@@ -6,6 +6,7 @@ import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
+import MovingImage2 from '../comps/MovingImage2';
 
 
 const Holder = styled.div `
@@ -70,10 +71,12 @@ export default function LandfillAnimals(){
             </div>
             <div id="box" className="container">
                 <Header text="Methane" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="The decomposition of organic waste in landfills produces toxic gasses like methane which is 25 times more powerful than carbon dioxide. Methane greatly contributes to our climate change by trapping heat in the atmosphere."></Bodytext>
+                <Bodytext marginbottom="20px;"Text="The decomposition of organic waste in landfills produces toxic gasses like methane which is 25 times more powerful than carbon dioxide."></Bodytext>
+                <MovingImage2 image="/methane.svg"/>
+                <Bodytext marginbottom="20px;"Text="Methane greatly contributes to our climate change by trapping heat in the atmosphere."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="The release of methane contributes to global warming. This means that there are no more polar bears, seals, and penguins."></Didyouknow>
-                    <img className="moving" id="image" src="/methane.svg" width="100px"></img>
+                    <img className="moving" id="image" src="/LandfillAni2.svg" width="100px"></img>
                 </div>
                 <div className="grid">
                     <Start routeTo="/LandfillQuiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>

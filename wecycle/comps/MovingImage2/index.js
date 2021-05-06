@@ -5,13 +5,17 @@ import styled, { keyframes } from 'styled-components';
 const Container = styled.div`
 display: flex;
 width:100%;
+align-items:center;
+justify-content:center;
+margin-bottom:30px;
+
 
 @keyframes move{
     0%{
-        transform:translate(0)
+        transform:translateY(0)
     }
     50%{
-        transform:translate(310px)
+        transform:translateY(15px)
     }
 }
 `
@@ -24,7 +28,7 @@ animation:move 4s linear infinite;
 const Holder = styled.div``
 
 
-const MovingImage2 = ({
+const MovingImage = ({
     image="/plasticbag.svg"
 
 }) =>{
@@ -36,4 +40,4 @@ const MovingImage2 = ({
     </Container>
 }
 
-export default MovingImage2;
+export default MovingImage;
