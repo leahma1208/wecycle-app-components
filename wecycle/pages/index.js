@@ -14,6 +14,7 @@ import Bodytext from '../comps/Bodytext';
 import Flags from '../comps/Flags';
 import Marinequiz from '../comps/Marinequiz';
 import BottomBar from '../comps/BottomBar';
+import MovingImage from '../comps/MovingImage';
 
 
 const Holder = styled.div `
@@ -48,6 +49,9 @@ export default function Home() {
     </div>
     <div className="container1">
       <ImgText />
+    </div>
+    <div className="container1">
+      <MovingImage />
     </div>
     <div className="container1">
       <Header />
