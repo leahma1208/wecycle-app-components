@@ -6,7 +6,7 @@ import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
-
+import MovingImage2 from '../comps/MovingImage2';
 
 const Holder = styled.div `
 .container {
@@ -71,7 +71,9 @@ export default function UrbanEnvironment(){
             </div>
             <div id="box" className="container">
                 <Header text="Plastic in Gardens" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="Chlorinated plastic can release harmful chemicals into the surrounding soil, which can then seep into groundwater or other surrounding water sources, and also the ecosystem. This can cause a range of potentially harmful effects on the species that drink the water."></Bodytext>
+                <Bodytext marginbottom="20px;"Text="Chlorinated plastic can release harmful chemicals into the surrounding soil, which can then seep into groundwater or other surrounding water sources, and also the ecosystem."></Bodytext>
+                <MovingImage2 image="/pollution.svg"/>
+                <Bodytext marginbottom="20px;"Text="This can cause a range of potentially harmful effects on the species that drink the water."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#87CCB5" backcolor="#C0ECDD" informationtext="Microplastics can also interact with soil fauna, affecting their health and soil functions. “Earthworms, for example, make their burrows differently when microplastics are present in the soil, affecting the earthworm's fitness and the soil condition,” says an article in Science Daily about the research."></Didyouknow>
                     <img className="moving" id="image" src="/garden.svg" width="80px"></img>

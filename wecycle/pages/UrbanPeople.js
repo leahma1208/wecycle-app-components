@@ -6,6 +6,7 @@ import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
+import MovingImage2 from '../comps/MovingImage2';
 
 
 const Holder = styled.div `
@@ -70,7 +71,9 @@ export default function UrbanPeople(){
             </div>
             <div id="box" className="container">
                 <Header text="Plastic in our city" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="plastic and other packaging waste makes up around 30 percent of total U.S. waste annually. Of the 34.5 million tons of plastic waste generated each year, only 9 percent is recycled, with most of the recyclable waste shipped to other countries for processing. However, the receiving countries often lack the infrastructure to properly process these materials, which leads to U.S. waste ending up in landfills and ecosystems across the globe."></Bodytext>
+                <Bodytext marginbottom="20px;"Text="Plastic and other packaging waste makes up around 30 percent of total U.S. waste annually. Of the 34.5 million tons of plastic waste generated each year, only 9 percent is recycled, with most of the recyclable waste shipped to other countries for processing."></Bodytext>
+                <MovingImage2 image="/waste.svg"/>
+                <Bodytext marginbottom="20px;"Text="However, the receiving countries often lack the infrastructure to properly process these materials, which leads to U.S. waste ending up in landfills and ecosystems across the globe."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#87CCB5" backcolor="#C0ECDD" informationtext="Precycle, based in Brooklyn, is a grocery store where, customers bring their own containers to fill up with any of the available locally-sourced and seasonal bulk products."></Didyouknow>
                     <img className="moving" id="image" src="/store.svg" width="100px"></img>

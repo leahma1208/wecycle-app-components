@@ -77,16 +77,16 @@ export default function Programs (){
 
 {/* ======================================================= */}
                     <Logoholder id="left">
-                        <ProgramLogo circlebg="#C0ECDD" src="/shoreline.svg"/>
+                        <ProgramLogo circlebg="#C0ECDD" src="/bcparks.svg"/>
                     </Logoholder>
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext textwidth="200px" bold="bold" Text="Great Canadian Shoreline Cleanup"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="BC Parks Volunteer"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="200px" Text="The Great Canadian Shoreline Cleanup is a national conservation program that provides Canadians the opportunity to take action in their communities wherever water meets land, one bit of trash at a time."/>
+                            <Bodytext textwidth="200px" Text="BC Parks benefits tremendously from the contributions made by volunteers. Over 15% of BC’s land base makes up the over 1,030 provincial parks and protected areas, many of which are actively cared for by passionate individuals and groups who generously donate their time and energy."/>
                         </Information>
 
                         <Information>
@@ -103,16 +103,16 @@ export default function Programs (){
 
                 {/* ======================================================= */}
                 <Logoholder id="left">
-                        <ProgramLogo circlebg="#C0ECDD" src="/Plasticoceans.svg"/>
+                        <ProgramLogo circlebg="#C0ECDD" src="/stanleypark.svg"/>
                     </Logoholder>
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext textwidth="200px" bold="bold" Text="Plastic Oceans"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="Stanley Park Volunteer"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="200px"  Text="The purpose of the organization is to raise awareness about plastic pollution. Annually, over 300 million tons of plastic is produced. More than 90% of that plastic is not recycled! Distressingly, much of that plastic is ending up in our oceans. Together, we can create a healthier ocean for a healthier you."/>
+                            <Bodytext textwidth="200px"  Text="The Stanley Park Ecology Society is a non-profit organization founded in 1988 that works alongside of the Vancouver Board of Parks and Recreation to promote stewardship and conservation in Stanley Park."/>
                         </Information>
 
                         <Information>
@@ -128,16 +128,16 @@ export default function Programs (){
 
                 {/* ======================================================= */}
                 <Logoholder id="left">
-                        <ProgramLogo circlebg="#C0ECDD" src="/oceanlegacy.svg"/>
+                        <ProgramLogo circlebg="#C0ECDD" src="/terracycle.svg"/>
                     </Logoholder>
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext textwidth="200px" bold="bold" Text="Ocean Legacy Foundation"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="Terracycle"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="200px"  Text="The Ocean Legacy Foundation (OLF) is a Canadian based non-profit organization that was founded in 2013 with the goal to end ocean plastic waste. The foundation is led by co-founders Chloe Dubois and James Middleton, and is supported by a board of directors, technical advisory committee and hundreds of volunteers worldwide."/>
+                            <Bodytext textwidth="200px"  Text="TerraCycle is Eliminating the Idea of Waste® by recycling the non-recyclable. Whether it's coffee capsules from your home, pens from a school, or plastic gloves from a manufacturing facility, TerraCycle can collect and recycle almost any form of waste. With your help, we are able to divert millions of pounds of waste from landfills and incinerators each month."/>
                         </Information>
 
                         <Information>
