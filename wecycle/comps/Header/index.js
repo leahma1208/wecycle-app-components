@@ -15,7 +15,7 @@ const Text = styled.p `
     font-family: ${props=>props.fontfamily};
     color: ${props=>props.color};
     letter-spacing: 0.07em;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     margin-left: ${props=>props.left};
 `;
 

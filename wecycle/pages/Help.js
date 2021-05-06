@@ -7,8 +7,6 @@ import BottomBar from '../comps/BottomBar';
 
 const Helpcont = styled.div`
     display:flex;
-    justify-content:center;
-    align:items:center;
     flex-direction:column;
     width:100%;
 `;
@@ -18,15 +16,18 @@ const MenuHolder = styled.div`
 
 const HeaderHolder = styled.div`
     display:flex;
-    justify-content:center;
-    align:items:center;
     flex-direction:column;
     width:100%;
+    align-items:center;
 `;
 
 const ItemsCont = styled.div`
-    width:40%;
-    display:flex;
+    width100%;
+    display:grid;
+    grid-template-columns:11.875rem 11.875rem;
+    margin-bottm:1.563rem;
+    align-items:center;
+    justify-content:center;
 `;
 const ItemsHolder = styled.div`
     display:flex;
@@ -35,6 +36,8 @@ const ItemsHolder = styled.div`
     
 `;
 const Items = styled.img`
+    margin-left: 1.563rem;
+    margin-right: 0.938rem;
 `;
 
 const BubbleBg = styled.div`

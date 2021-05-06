@@ -26,6 +26,8 @@ const ItemsCont = styled.div`
     display:grid;
     grid-template-columns:11.875rem 11.875rem;
     margin-bottm:1.563rem;
+    align-items:center;
+    justify-content:center;
 `;
 const ItemsHolder = styled.div`
     display:flex;
