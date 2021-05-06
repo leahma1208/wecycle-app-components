@@ -21,7 +21,9 @@ margin-bottom:30px;
 `
 
 const Image = styled.img`
-width:100px;
+width:120px;
+
+
 animation:move 4s linear infinite;
 `
 

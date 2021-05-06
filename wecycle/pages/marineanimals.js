@@ -6,6 +6,7 @@ import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
+import MovingImage2 from '../comps/MovingImage2';
 
 
 const Holder = styled.div `
@@ -35,8 +36,10 @@ const Holder = styled.div `
 
 .row {
     display:flex;
-    justify-content:center
+    justify-content:space-evenly;
     width:100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #image {
@@ -56,6 +59,12 @@ const Holder = styled.div `
     animation: slideIn 3s infinite;
     animation-direction:reverse;
 }
+
+.flex{
+    display:flex;
+   
+}
+
 @keyframes slideIn {
     0%{
         transform: rotate(0deg);
@@ -80,10 +89,19 @@ export default function MarineAnimals(){
             </div>
             <div id="box" className="container">
                 <Header text="Sea Turtles" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="A sea turtle swims through the water and spots a white blob floating near the surface. “Yum!” it thinks. “A jellyfish!” Chasing after its dinner, the turtle swallows the item. But the floating blob isn’t a jelly—it’s a plastic bag that could make the sea turtle sick. "></Bodytext>
+                <Bodytext marginbottom="20px;"Text="A sea turtle swims through the water and spots a white blob floating near the surface. “Yum!” it thinks."></Bodytext>
+                <MovingImage2 image="/ocean-animals-1.svg"/>
+
+                <Bodytext marginbottom="20px;"Text="“A jellyfish!” Chasing after its dinner, the turtle swallows the item. But the floating blob isn’t a jelly—it’s a plastic bag that could make the sea turtle sick."></Bodytext>
+               <div className="flex">
+                <MovingImage2 image="/ocean-animals-2.svg"/>
+                <MovingImage2 image="/ocean-animals-2-2.svg"/>
+                </div>
+                
+                
                 <div className="row">
                     <Didyouknow informationtext="This sea creature isn’t alone: Over 700 species of marine animals have been reported to have eaten or been entangled in plastic."></Didyouknow>
-                    <img className="moving" id="image" src="/seaturtle.svg" width="100px"></img>
+                    <img className="moving" id="image" src="/ocean-animals-3.svg" width="100px"></img>
                 </div>
                 <div className="grid">
                     <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
