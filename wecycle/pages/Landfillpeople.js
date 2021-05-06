@@ -6,6 +6,7 @@ import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
+import MovingImage2 from '../comps/MovingImage2';
 
 
 const Holder = styled.div `
@@ -70,10 +71,12 @@ export default function LandfillPeople(){
             </div>
             <div id="box" className="container">
                 <Header text="Landfill sites" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="Each Canadian produces 720 kilograms of waste per year, which is about 10 times more than that produced by six African countries. Surprisingly, our production is 7 percent higher than the per capita production of garbage in the USA, which has caused almost an over-consumer impact."></Bodytext>
+                <Bodytext marginbottom="20px;"Text="Each Canadian produces 720 kilograms of waste per year, which is about 10 times more than that produced by six African countries."></Bodytext>
+                <MovingImage2 image="/garbage.svg"/>
+                <Bodytext marginbottom="20px;"Text="Surprisingly, our production is 7 percent higher than the per capita production of garbage in the USA, which has caused almost an over-consumer impact."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="Canada has over 10,000 landfill sites! Averaging around 600 acres each (in comparison, Monaco is  500 acres)"></Didyouknow>
-                    <img className="moving" id="image" src="/garbage.svg" width="100px"></img>
+                    <img className="moving" id="image" src="/Landfillppl2.svg" width="100px"></img>
                 </div>
                 <div className="grid">
                     <Start routeTo="/LandfillQuiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>

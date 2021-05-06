@@ -6,6 +6,7 @@ import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
+import MovingImage2 from '../comps/MovingImage2';
 
 
 const Holder = styled.div `
@@ -70,7 +71,9 @@ export default function LandfillEnvironment(){
             </div>
             <div id="box" className="container">
                 <Header text="Toxins/Leachate" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="Leachate is a liquid formed when water is filtered through waste decomposed from landfills. Wastes contain toxic substances. Electronic waste contains mercury, cadmium, PVC, acids, lead, and more."></Bodytext>
+                <Bodytext marginbottom="20px;"Text="Leachate is a liquid formed when water is filtered through waste decomposed from landfills. Wastes contain toxic substances."></Bodytext>
+                <MovingImage2 image="/LandfillEnv.svg"/>
+                <Bodytext marginbottom="20px;"Text="Electronic waste contains mercury, cadmium, PVC, acids, lead, and more."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="These substances are polluting our land and groundwater!"></Didyouknow>
                     <img className="moving" id="image" src="/ground.svg" width="100px"></img>
