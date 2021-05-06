@@ -6,7 +6,7 @@ import Bodytext from '../comps/Bodytext';
 import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
-
+import MovingImage2 from '../comps/MovingImage2';
 
 const Holder = styled.div `
 .container {
@@ -70,7 +70,9 @@ export default function UrbanAnimals(){
             </div>
             <div id="box" className="container">
                 <Header text="Plastic waste in our ecosystem" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="Plastic waste contaminates all major ecosystems on the planet, with concern increasing about its potential impacts on wildlife and human health, as smaller and more widespread plastic particles are identified in both the natural and built environment. Elsewhere, a flamingo strangles itself on a bag, unable to twist its way out of the entangling plastic. A platypus suffers deep cuts from a plastic bag entwined around its body, while a pelican dies after consuming plastic bags while diving for fish."></Bodytext>
+                <Bodytext marginbottom="20px;"Text="Plastic waste contaminates all major ecosystems on the planet, with concern increasing about its potential impacts on wildlife and human health, as smaller and more widespread plastic particles are identified in both the natural and built environment."></Bodytext>
+                <MovingImage2 image="/bird.svg"/>
+                <Bodytext marginbottom="20px;"Text="Elsewhere, a flamingo strangles itself on a bag, unable to twist its way out of the entangling plastic. A platypus suffers deep cuts from a plastic bag entwined around its body, while a pelican dies after consuming plastic bags while diving for fish."></Bodytext>
                 <div className="row">
                     <Didyouknow headercolor="#87CCB5" backcolor="#C0ECDD" informationtext="Microplastics can also interact with soil fauna, affecting their health and soil functions. “Earthworms, for example, make their burrows differently when microplastics are present in the soil, affecting the earthworm's fitness and the soil condition,” says an article in Science Daily about the research."></Didyouknow>
                     <img className="moving" id="image" src="/ecosystem.svg" width="100px"></img>
