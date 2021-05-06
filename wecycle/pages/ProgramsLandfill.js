@@ -77,16 +77,16 @@ export default function Programs (){
 
 {/* ======================================================= */}
                     <Logoholder id="left">
-                        <ProgramLogo circlebg="#FFF7DE" src="/shoreline.svg"/>
+                        <ProgramLogo circlebg="#FFF7DE" src="/greenchair.svg"/>
                     </Logoholder>
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext textwidth="200px" bold="bold" Text="Great Canadian Shoreline Cleanup"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="Green Chair Recycling"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="200px" Text="The Great Canadian Shoreline Cleanup is a national conservation program that provides Canadians the opportunity to take action in their communities wherever water meets land, one bit of trash at a time."/>
+                            <Bodytext textwidth="200px" Text="If you are interested in getting involved and contributing your knowledge and skills to many of our programs or projects? Our team meetings in the areas of Energy & Transportation, Waste and Food are one of the easiest ways to get started!"/>
                         </Information>
 
                         <Information>
@@ -103,16 +103,16 @@ export default function Programs (){
 
                 {/* ======================================================= */}
                 <Logoholder id="left">
-                        <ProgramLogo circlebg="#FFF7DE" src="/Plasticoceans.svg"/>
+                        <ProgramLogo circlebg="#FFF7DE" src="/SPEC.svg"/>
                     </Logoholder>
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext textwidth="200px" bold="bold" Text="Plastic Oceans"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="SPEC Volunteer"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="200px"  Text="The purpose of the organization is to raise awareness about plastic pollution. Annually, over 300 million tons of plastic is produced. More than 90% of that plastic is not recycled! Distressingly, much of that plastic is ending up in our oceans. Together, we can create a healthier ocean for a healthier you."/>
+                            <Bodytext textwidth="200px"  Text="If you are interested in getting involved and contributing your knowledge and skills to many of our programs or projects? Our team meetings in the areas of Energy & Transportation, Waste and Food are one of the easiest ways to get started!"/>
                         </Information>
 
                         <Information>
@@ -128,16 +128,16 @@ export default function Programs (){
 
                 {/* ======================================================= */}
                 <Logoholder id="left">
-                        <ProgramLogo circlebg="#FFF7DE" src="/oceanlegacy.svg"/>
+                        <ProgramLogo circlebg="#FFF7DE" src="/returnit.svg"/>
                     </Logoholder>
 {/* ======================================================= */}
                     <Logoholder id="right">
                         <Information>
-                            <Bodytext textwidth="200px" bold="bold" Text="Ocean Legacy Foundation"/>
+                            <Bodytext textwidth="200px" bold="bold" Text="Return-it"/>
                         </Information>
 
                         <Information>
-                            <Bodytext textwidth="200px"  Text="The Ocean Legacy Foundation (OLF) is a Canadian based non-profit organization that was founded in 2013 with the goal to end ocean plastic waste. The foundation is led by co-founders Chloe Dubois and James Middleton, and is supported by a board of directors, technical advisory committee and hundreds of volunteers worldwide."/>
+                            <Bodytext textwidth="200px"  Text="Why do a bottle drive? It's worth it! Whether you are buying sports equipment, planning a field trip, or supporting a charity, you'll find that a bottle drive is a fun and easy way to raise money. In fact, the average bottle drive raises between $1,000 and $1,500. Some groups have even made over $3,000. Not bad for a half day's work."/>
                         </Information>
 
                         <Information>
