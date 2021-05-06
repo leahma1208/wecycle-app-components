@@ -9,6 +9,7 @@ const Helpcont = styled.div`
     display:flex;
     flex-direction:column;
     width:100%;
+    
 `;
 const MenuHolder = styled.div`
     width: 100%;
@@ -25,7 +26,7 @@ const ItemsCont = styled.div`
     width100%;
     display:grid;
     grid-template-columns:11.875rem 11.875rem;
-    margin-bottm:1.563rem;
+    margin-bottom:1.563rem;
     align-items:center;
     justify-content:center;
 `;
@@ -33,6 +34,7 @@ const ItemsHolder = styled.div`
     display:flex;
     width:100%;
     align-items:center;
+   
     
 `;
 const Items = styled.img`
