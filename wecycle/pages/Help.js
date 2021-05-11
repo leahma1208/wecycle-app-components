@@ -4,6 +4,7 @@ import Menu from '../comps/Menu';
 import Header from '../comps/Header';
 import Bodytext from "../comps/Bodytext";
 import BottomBar from '../comps/BottomBar';
+import Start from '../comps/Start';
 
 const Helpcont = styled.div`
     display:flex;
