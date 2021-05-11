@@ -33,7 +33,7 @@ flex-direction:column;
 
 .row {
     display:flex;
-    justify-content:space-evenly;
+    justify-content:center;
     width:100%;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -102,7 +102,7 @@ export default function MarineEnviro(){
                 </div>
                 <div className="grid">
                     <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/Help" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/More" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
                 </div>
                 <div id="bar-holder">
                     <BottomBar routeTo1="/Marine"></BottomBar>
