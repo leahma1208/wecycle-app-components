@@ -7,6 +7,10 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
 import MovingImage2 from '../comps/MovingImage2';
+import Medal from '../comps/Medal';
+import Progress from '../comps/Progress';
+import Why from '../comps/Why';
+import ImgText from '../comps/ImgText';
 
 
 const Holder = styled.div `
@@ -36,10 +40,10 @@ const Holder = styled.div `
     margin-left:30px;
 }
 .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom:60px;
-}
+    display:flex;
+    justify-content:center;
+    margin-bottom: 80px;
+ }
 
 .moving {
     position: relative;
@@ -58,6 +62,11 @@ const Holder = styled.div `
         transform: rotate(0deg);
     }
 }
+
+.help{
+    margin-bottom: 50px;
+    
+}
 `
 
 export default function LandfillEnvironment(){
@@ -68,23 +77,32 @@ export default function LandfillEnvironment(){
             </div>
             <div className="container">
                 <Header left="10px" text="How is plastic in landfill affecting the Environment?"></Header>
+                <Medal text="Do you want to earn a Landfill Badge? Learn about the People, Environment, and Animals"/>
+                <Progress color="#FFEAAD" width="160px;"/>
             </div>
             <div id="box" className="container">
-                <Header text="Toxins/Leachate" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="Leachate is a liquid formed when water is filtered through waste decomposed from landfills. Wastes contain toxic substances."></Bodytext>
-                <MovingImage2 image="/LandfillEnv.svg"/>
-                <Bodytext marginbottom="20px;"Text="Electronic waste contains mercury, cadmium, PVC, acids, lead, and more."></Bodytext>
-                <div className="row">
-                    <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="These substances are polluting our land and groundwater!"></Didyouknow>
-                    <img className="moving" id="image" src="/ground.svg" width="100px"></img>
+                <Header text="Our decomposers are slowly dying" margintop="50px;"></Header>
+                <Bodytext marginbottom="20px;"Text="Microplastic pollution in landfills causes significant damage to populations of soil-dwelling mites, larvae and other tiny creatures that maintain the fertility of the land"></Bodytext>
+                <MovingImage2 image="/worm.svg"/>
+                <Bodytext marginbottom="20px;"Text="Without insects to help break down and dispose of wastes, dead animals and plants would accumulate in our environment."></Bodytext>
+                <MovingImage2 image="/compost.svg"/>
+                <Header text="How Can You Help?" margintop="50px;"></Header>
+                <div className="help">
+                <ImgText src="/exterminate.svg" width="100px" text="Don’t use chemicals to exterminate insects"></ImgText>
                 </div>
+                <div className="help">
+                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="The chemicals will kill insects we need to decompose"></Why>
+                </div>
+                <div className="help">
+                <ImgText src="/plasticbag.svg" width="90px" text="Avoid to using plastic bag"></ImgText>
+                </div>
+                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="A plastic bag takes the longest to decompose"></Why>
                 <div className="grid">
-                    <Start routeTo="/LandfillQuiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/MoreLandfill" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/LandfillAnimals" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
                 </div>
             </div>
             <div>
-                <BottomBar routeTo1="/Landfills"></BottomBar>
+                <BottomBar routeTo1="/Landfillpeople"></BottomBar>
             </div>
         </Holder>
     )

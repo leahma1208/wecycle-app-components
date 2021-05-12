@@ -7,7 +7,10 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
 import MovingImage2 from '../comps/MovingImage2';
-
+import Medal from '../comps/Medal';
+import Progress from '../comps/Progress';
+import Why from '../comps/Why';
+import ImgText from '../comps/ImgText';
 
 const Holder = styled.div `
 .container {
@@ -36,10 +39,10 @@ const Holder = styled.div `
     margin-left:30px;
 }
 .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom:60px;
-}
+    display:flex;
+    justify-content:center;
+    margin-bottom: 80px;
+ }
 
 .moving {
     position: relative;
@@ -58,6 +61,11 @@ const Holder = styled.div `
         transform: rotate(0deg);
     }
 }
+
+.help{
+    margin-bottom: 50px;
+    
+}
 `
 
 export default function LandfillPeople(){
@@ -68,23 +76,31 @@ export default function LandfillPeople(){
             </div>
             <div className="container">
                 <Header left="10px" text="How is plastic in landfills affecting people?"></Header>
+                <Medal text="Do you want to earn a Landfill Badge? Learn about the People, Environment, and Animals"/>
+                <Progress color="#FFEAAD"/>
             </div>
             <div id="box" className="container">
                 <Header text="Landfill sites" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="Each Canadian produces 720 kilograms of waste per year, which is about 10 times more than that produced by six African countries."></Bodytext>
-                <MovingImage2 image="/garbage.svg"/>
-                <Bodytext marginbottom="20px;"Text="Surprisingly, our production is 7 percent higher than the per capita production of garbage in the USA, which has caused almost an over-consumer impact."></Bodytext>
-                <div className="row">
-                    <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="Canada has over 10,000 landfill sites! Averaging around 600 acres each (in comparison, Monaco is  500 acres)"></Didyouknow>
-                    <img className="moving" id="image" src="/Landfillppl2.svg" width="100px"></img>
+                <Bodytext marginbottom="20px;"Text="Canadians produce a lot of plastic waste an estimated 3.3 million tonnes per year."></Bodytext>
+                <MovingImage2 image="/cntower.png"/>
+                <Bodytext marginbottom="20px;"Text="This means our community is running out of space to store our garbage waste. Without space to store our garbage we would have even more pollution!"></Bodytext>
+                <MovingImage2 image="/waste2.svg"/>
+                <Header text="How Can You Help?" margintop="50px;"></Header>
+                <div className="help">
+                <ImgText src="/plant.png" width="90px" text="Reuse what you can!"></ImgText>
                 </div>
+                <div className="help">
+                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="It can reduce waste emissions"></Why>
+                </div>
+                <div className="help">
+                <ImgText src="/plastics.svg" width="90px" text="Reuse what you can!"></ImgText>
+                </div>
+                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="It can reduce waste emissions"></Why>
                 <div className="grid">
-                    <Start routeTo="/LandfillQuiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/MoreLandfill" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/LandfillEnvironment" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
                 </div>
             </div>
             <div>
-                <BottomBar routeTo1="/Landfills"></BottomBar>
                 <BottomBar routeTo1="/Landfills"></BottomBar>
             </div>
         </Holder>

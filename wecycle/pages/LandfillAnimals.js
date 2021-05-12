@@ -7,6 +7,10 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
 import MovingImage2 from '../comps/MovingImage2';
+import Medal from '../comps/Medal';
+import Progress from '../comps/Progress';
+import Why from '../comps/Why';
+import ImgText from '../comps/ImgText';
 
 
 const Holder = styled.div `
@@ -36,10 +40,10 @@ const Holder = styled.div `
     margin-left:30px;
 }
 .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom:60px;
-}
+    display:flex;
+    justify-content:center;
+    margin-bottom: 80px;
+ }
 
 .moving {
     position: relative;
@@ -58,6 +62,10 @@ const Holder = styled.div `
         transform: rotate(0deg);
     }
 }
+.help{
+    margin-bottom: 50px;
+    
+}
 `
 
 export default function LandfillAnimals(){
@@ -68,25 +76,33 @@ export default function LandfillAnimals(){
             </div>
             <div className="container">
                 <Header left="10px" text="How is plastic in landfill affecting animals?"></Header>
+                <Medal text="Do you want to earn a Landfill Badge? Learn about the People, Environment, and Animals"/>
+                <Progress color="#FFEAAD" width="320px;"/>
             </div>
             <div id="box" className="container">
-                <Header text="Methane" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="The decomposition of organic waste in landfills produces toxic gasses like methane which is 25 times more powerful than carbon dioxide."></Bodytext>
-                <MovingImage2 image="/methane.svg"/>
-                <Bodytext marginbottom="20px;"Text="Methane greatly contributes to our climate change by trapping heat in the atmosphere."></Bodytext>
-                <div className="row">
-                    <Didyouknow headercolor="#FFE082" backcolor="#FFF7DE" informationtext="The release of methane contributes to global warming. This means that there are no more polar bears, seals, and penguins."></Didyouknow>
-                    <img className="moving" id="image" src="/LandfillAni2.svg" width="100px"></img>
+            <Header text="Animals Rely on Landfill for Food" margintop="50px;"></Header>
+                <Bodytext marginbottom="20px;"Text="Certain animals may begin to rely on the landfill for food. Which also results in ingesting plastic."></Bodytext>
+                <MovingImage2 image="/seagull.png"/>
+                <Bodytext marginbottom="20px;"Text="It encourages bad habits in the local wildlife population depending on what exactly it is your company throws into a landfill."></Bodytext>
+                <MovingImage2 image="/bird.png"/>
+                <Header text="How Can You Help?" margintop="50px;"></Header>
+                <div className="help">
+                <ImgText src="/can.svg" width="70px" text="Always recycle aluminum cans!"></ImgText>
                 </div>
+                <div className="help">
+                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="Aluminum cans end up in landfills which becomes food for animals"></Why>
+                </div>
+                <div className="help">
+                <ImgText src="/cup.svg" width="50px" text="Recycle plastic cups!"></ImgText>
+                </div>
+                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="Birds can mistakenly consume plastics in the landfill!"></Why>
                 <div className="grid">
-                    <Start routeTo="/LandfillQuiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/MoreLandfill" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/LandfillQuiz" spacing="2px" text="Earn your badge" fontsize="16px" width="250px" padding="10px" height="52px" marginright="7px"></Start>
                 </div>
             </div>
             <div>
-                <BottomBar routeTo1="/Landfills"></BottomBar>
+                <BottomBar routeTo1="/LandfillEnvironment"></BottomBar>
             </div>
-
         </Holder>
     )
 }
