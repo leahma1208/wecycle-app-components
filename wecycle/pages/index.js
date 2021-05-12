@@ -16,6 +16,8 @@ import Marinequiz from '../comps/Marinequiz';
 import BottomBar from '../comps/BottomBar';
 import MovingImage from '../comps/MovingImage';
 import Medal from '../comps/Medal';
+import Progress from '../comps/Progress';
+import Why from '../comps/Why';
 
 
 const Holder = styled.div `
@@ -24,12 +26,19 @@ const Holder = styled.div `
   flex-direction: column;
   justify-content:center;
   align-items:center;
+  margin-bottom: 100px;
 }
 
 `
 
 export default function Home() {
   return <Holder>
+      <div className="container1">
+      <Progress />
+    </div>
+    <div className="container1">
+      <Why text="Aluminum cans end up in landfills which becomes food for animals"/>
+    </div>
     <div className="container">
     <Menu/>
     </div>
@@ -78,6 +87,9 @@ export default function Home() {
     <div className="container1">
       <BottomBar />
     </div>
+
+  
+    
     
   
   </Holder>
