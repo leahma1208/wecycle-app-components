@@ -115,7 +115,7 @@ export default function QuizTimeUrban({
                 <Header text="How many people die every year due to air pollution?" />
                 <Bodytext 
                 Text={texts}
-                textwidth="250px"/>
+                textwidth="300px"/>
                  <Quizimg src="/sneeze.svg" width="130px"/>
             </Titleholder>
             </Box>
