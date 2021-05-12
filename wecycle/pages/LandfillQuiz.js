@@ -118,7 +118,7 @@ export default function QuizTimeUrban({
                 <Header text="Roughly how big do you think Canada’s landfill is?" />
                 <Bodytext 
                 Text={texts}
-                textwidth="250px"/>
+                textwidth="300px"/>
                 <Flags>
                     <Flag imagesize="105px" image="/newzealand.png" country="New Zealand"/>
                     <Flag image="/italy.png" country="Italy"/>
