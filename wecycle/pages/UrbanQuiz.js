@@ -42,6 +42,7 @@ flex-direction:column;
 align-items:center;
 position:relative;
 bottom: 40px;
+margin-bottom:90px;
 `;
 
 const StudyMore = styled.div`
@@ -127,14 +128,6 @@ export default function QuizTimeUrban({
                 onCompostClick={HandleCompost}
                 />
             </ButtonHolder>
-
-            <StudyMore>
-                <StudyOthers
-                title={title}
-                source={source}
-                routeTo={route}
-                />
-            </StudyMore>
             <BottomBar routeTo1="/UrbanAnimals"></BottomBar>
         </QuizCont>
     )
