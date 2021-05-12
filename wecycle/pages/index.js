@@ -15,6 +15,7 @@ import Flags from '../comps/Flags';
 import Marinequiz from '../comps/Marinequiz';
 import BottomBar from '../comps/BottomBar';
 import MovingImage from '../comps/MovingImage';
+import Medal from '../comps/Medal';
 
 
 const Holder = styled.div `
@@ -64,6 +65,9 @@ export default function Home() {
     </div>
     <div className="container1">
       <Bodytext />
+    </div>
+    <div className="container1">
+      <Medal/>
     </div>
     <div className="container1">
       <Flags />
