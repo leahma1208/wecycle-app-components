@@ -92,7 +92,7 @@ export default function QuizTime({
         setTexts("Correct! Plastic cutlery, cups, and water bottles go in the recycling bin.")
         setTitle("Study Other Regions")
         setSource("/ForwardButton.svg")
-        setRoute("/regions")
+        setRoute("/MarineCorrectAnswer")
         setBackground("#4ACE8F")
     }
     const HandleCompost = () => {

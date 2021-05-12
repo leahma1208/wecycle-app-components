@@ -90,7 +90,7 @@ export default function QuizTimeUrban({
         setTexts("Correct! Air pollution kills an estimated seven million people worldwide every year.")
         setTitle("Study Other Regions")
         setSource("/ForwardButton.svg")
-        setRoute("/regions")
+        setRoute("/UrbanCorrectAnswer")
         setBackground("#4ACE8F")
     }
     const HandleCompost = () => {
