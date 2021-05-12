@@ -25,7 +25,7 @@ const Title = styled.h3 `
 
 
 const StudyOthers = ({
-    title="Study Other Regions",
+    title="Take Action",
     routeTo ="/regions",
     source = "/ForwardButton.svg",
     
