@@ -7,7 +7,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.p `
-    max-width: 290px;
+    max-width:${props=>props.width};
     font-size: 13px;
     font-weight: 400;
     color: black;
@@ -16,16 +16,18 @@ const Text = styled.p `
 
 const Img = styled.img`
     display: ${props=>props.medal};
+   margin-right:10px;
 `;
 
 const Medal = ({
     text="Do you want to earn a  marine badge? Learn about the People, Environment, and Animals ",
-    medal="block"
+    medal="block",
+    width="290px;"
 }) =>{
     
     return <Container>
         <Img medal={medal} src="/medal.svg"/>
-        <Text>{text}</Text>
+        <Text width={width}>{text} </Text>
     </Container>
 }
 
