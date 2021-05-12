@@ -16,18 +16,19 @@ const Text = styled.p `
 
 const Icon = styled.img`
     display: ${props=>props.icon};
-    width:90px;
+    width:${props=>props.width};
     margin-right: 30px;
 `;
 
 const ImgText = ({
     text="Avoid to use card board",
     icon="block",
-    src="/cardboard.svg"
+    src="/cardboard.svg",
+    width="90px"
 }) =>{
     
     return <Container>
-        <Icon icon={icon} src={src}/>
+        <Icon icon={icon} src={src} width={width}/>
         <Text>{text}</Text>
     </Container>
 }

@@ -7,21 +7,39 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
 import MovingImage2 from '../comps/MovingImage2';
+import Medal from '../comps/Medal';
+import Progress from '../comps/Progress'
+import ImgTxt from '../comps/ImgText'
+import Why from '../comps/Why'
+
 
 const Holder = styled.div `
 .container {
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center
+    align-items:center;
 }
 
+.top {
+    display:flex;
+    flex-direction:column;
+    width: 80vw;
+    margin:auto;
+   justify-content:center;
+}
+
+
+.margin{
+    margin-bottom: 20px;
+    
+}
 #box {
     height: auto;
+    width: 100%;
     background-color: #AFDDCD;
     border-radius: 5rem 5rem 0rem 0rem;
     margin-top: 1rem;
-    width: 100%
 }
 
 .row {
@@ -35,9 +53,9 @@ const Holder = styled.div `
     margin-left:30px;
 }
 .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom:60px;
+   display:flex;
+   justify-content:center;
+   margin-bottom: 80px;
 }
 
 .moving {
@@ -57,6 +75,19 @@ const Holder = styled.div `
         transform: rotate(0deg);
     }
 }
+
+
+.help{
+    margin-bottom: 50px;
+    
+}
+
+.medal{
+    margin-bottom: 20px;
+   display:flex;
+   align-itmes: start;
+    
+}
 `
 
 export default function UrbanAnimals(){
@@ -65,25 +96,38 @@ export default function UrbanAnimals(){
             <div>
                 <Menu routeTo="/UrbanCities"title="Animals"></Menu>
             </div>
-            <div className="container">
-                <Header text="How is plastic in urban cities Affecting animals?"></Header>
-            </div>
-            <div id="box" className="container">
-                <Header text="Plastic waste in our ecosystem" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="Plastic waste contaminates all major ecosystems on the planet, with concern increasing about its potential impacts on wildlife and human health, as smaller and more widespread plastic particles are identified in both the natural and built environment."></Bodytext>
-                <MovingImage2 image="/bird.svg"/>
-                <Bodytext marginbottom="20px;"Text="Elsewhere, a flamingo strangles itself on a bag, unable to twist its way out of the entangling plastic. A platypus suffers deep cuts from a plastic bag entwined around its body, while a pelican dies after consuming plastic bags while diving for fish."></Bodytext>
-                <div className="row">
-                    <Didyouknow headercolor="#87CCB5" backcolor="#C0ECDD" informationtext="Microplastics can also interact with soil fauna, affecting their health and soil functions. “Earthworms, for example, make their burrows differently when microplastics are present in the soil, affecting the earthworm's fitness and the soil condition,” says an article in Science Daily about the research."></Didyouknow>
-                    <img className="moving" id="image" src="/ecosystem.svg" width="100px"></img>
+            
+                <div className="container"><Header left="10px"width="350px"text="How is plastic in urban cities Affecting animals?"></Header>
+    
+                <div className="medal"><Medal text="So close! Scroll to the bottom to recieve your badge"/></div>
+                <div className="margin"><Progress color="#AFDDCD" width="320px;"/></div>
                 </div>
+            <div id="box" className="container">
+                <Header text="Plastic waste in our ecosystem" margintop="50px;" marginbottom="0px;"></Header>
+                <Bodytext marginbottom="0px;"Text="Plastic waste contaminates all major ecosystems on the planet, with concern increasing about its potential impacts on wildlife and human health."></Bodytext>
+                <MovingImage2 image="/city-animals-1.svg"/>
+                <Bodytext marginbottom="20px;"Text="Elsewhere, a flamingo strangles itself on a bag, unable to twist its way out of the entangling plastic."></Bodytext>
+                <MovingImage2 image="/city-animals-2.svg"/>
+                
+                <div className="container">
+                    <Header marginbottom="40px" text="How can you help?"/>
+                    <div className="help"><ImgTxt src="/city-animals-3.svg" width="90px" text="Don’t recycle 
+plastic bags"/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" text="Animals get entangled
+in plastics."/></div>
+                    <div className="help"><ImgTxt src="/city-animals-4.svg" width="80px" text="Don’t recycle 
+caps/lids"/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" text="Animals mistakenly consume plastics."/></div>
+                </div>
+               
+               
                 <div className="grid">
-                    <Start routeTo="/UrbanQuiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/MoreUrban" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/UrbanAnimals" spacing="2px" text="Earn your badge" fontsize="16px" width="250px" padding="10px" height="52px" marginright="7px"></Start>
+                    
                 </div>
             </div>
             <div>
-                <BottomBar routeTo1="/UrbanCities"></BottomBar>
+                <BottomBar routeTo1="/UrbanEnvironment"></BottomBar>
             </div>
 
         </Holder>

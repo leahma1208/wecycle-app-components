@@ -22,9 +22,8 @@ const Holder = styled.div `
 }
 
 .margin{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     
-
 }
 #box {
     height: auto;
@@ -67,6 +66,12 @@ const Holder = styled.div `
         transform: rotate(0deg);
     }
 }
+
+
+.help{
+    margin-bottom: 50px;
+    
+}
 `
 
 export default function UrbanPeople(){
@@ -78,7 +83,7 @@ export default function UrbanPeople(){
             <div className="container">
                 <Header left="10px"width="350px"text="How are plastics in Urban Cities affecting people?"></Header>
                 
-                <div className="margin"><Medal/></div>
+                <div className="margin"><Medal text="Do you want to earn a cities badge? Learn about the People, Environment, and Animals "/></div>
                 <div className="margin"><Progress color="#AFDDCD"/></div>
             </div>
             <div id="box" className="container">
@@ -89,14 +94,15 @@ export default function UrbanPeople(){
                 
                 <div className="container">
                     <Header marginbottom="40px" text="How can you help?"/>
-                    <div className="margin"><ImgTxt/></div>
-                    <div className="margin"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA"/></div>
-                    <div className="margin"><ImgTxt src="/coffeecups.svg" text="Don't throw coffee cups on the street."/></div>
+                    <div className="help"><ImgTxt/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA"text="The most common waste in the city is the card board"/></div>
+                    <div className="help"><ImgTxt src="/coffeecups.svg" text="Don't throw coffee cups on the street."/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" text="It's the most trash thrown away on the streets of the city"/></div>
                 </div>
                
                
                 <div className="grid">
-                    <Start routeTo="/UrbanQuiz" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/UrbanEnvironment" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
                     
                 </div>
             </div>
