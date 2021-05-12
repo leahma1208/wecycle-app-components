@@ -95,9 +95,9 @@ export default function UrbanPeople(){
                 <div className="container">
                     <Header marginbottom="40px" text="How can you help?"/>
                     <div className="help"><ImgTxt/></div>
-                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA"text="The most common waste in the city is the card board"/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" bottom="70px" text="The most common waste in the city is the card board"/></div>
                     <div className="help"><ImgTxt src="/coffeecups.svg" text="Don't throw coffee cups on the street."/></div>
-                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" text="It's the most trash thrown away on the streets of the city"/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" bottom="70px" text="It's the most trash thrown away on the streets of the city"/></div>
                 </div>
                
                

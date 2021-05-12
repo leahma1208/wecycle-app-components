@@ -44,6 +44,7 @@ align-items:center;
 position:relative;
 bottom: 40px;
 margin-bottom:90px;
+font-weight: 700;
 `;
 
 const StudyMore = styled.div`

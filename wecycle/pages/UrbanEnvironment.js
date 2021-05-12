@@ -111,9 +111,9 @@ export default function UrbanEnvironment(){
                 <div className="container">
                     <Header marginbottom="40px" text="How can you help?"/>
                     <div className="help"><ImgTxt src="/city-enviro-2.svg" width="70px" text="Use garden safe plastic bags"/></div>
-                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA"/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" bottom="65px"/></div>
                     <div className="help"><ImgTxt src="/city-enviro-3.svg" text="Don’t keep plastic laying around"/></div>
-                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" text="Plastic breaks down into microplastics entering sewers and farmland"/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" bottom="85px" text="Plastic breaks down into microplastics entering sewers and farmland"/></div>
                 </div>
                
                

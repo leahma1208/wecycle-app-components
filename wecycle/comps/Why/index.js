@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Cont = styled.div`
 display:flex;
-
+position:relative;
 
   
 `;
@@ -21,15 +21,15 @@ border-radius: 10px;
 display:flex;
 justify-content: center;
 align-items: center;
-position:relative;
-left:55px;
-bottom:19px;
+position:absolute;
+left: -25px;
+bottom: ${props=>props.bottom};
 
 `;
 
 
 const InfoCont = styled.div`
-max-width: 300px;
+max-width: 290px;
 min-height: 56px;
 background-color:${props=>props.bgcolor2};
 border-radius: 12px;
@@ -38,6 +38,7 @@ display:flex;
 justify-content: center;
 align-items: center;
 text-align:center;
+
 
 padding:20px;
 
@@ -50,14 +51,15 @@ padding:20px;
 const Why = ({
 text="Regular plastic bags seep chemicals into the ground",
 bgcolor1="#7E93FF",
-bgcolor2="#E1E6FF"
+bgcolor2="#E1E6FF",
+bottom="75px"
 
 }) => {
 
 
     return (
         <Cont>
-            <WhyCont bgcolor1={bgcolor1}>Why?</WhyCont>
+            <WhyCont bgcolor1={bgcolor1} bottom={bottom}>Why?</WhyCont>
             <InfoCont bgcolor2={bgcolor2}>{text}</InfoCont>
         </Cont>
     )
