@@ -99,7 +99,7 @@ export default function QuizTimeUrban({
             <StudyMore>
                 <StudyOthers
                 source={source}
-                routeTo={route}
+                routeTo="TakeActionLandfill"
                 />
             </StudyMore>
             <BottomBar routeTo1="/LandfillAnimals"></BottomBar>
