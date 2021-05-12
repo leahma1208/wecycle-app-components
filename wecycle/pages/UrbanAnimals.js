@@ -113,16 +113,15 @@ export default function UrbanAnimals(){
                     <Header marginbottom="40px" text="How can you help?"/>
                     <div className="help"><ImgTxt src="/city-animals-3.svg" width="90px" text="Don’t recycle 
 plastic bags"/></div>
-                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" text="Animals get entangled
-in plastics."/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" bottom="50px" text="Animals get entangled in plastics."/></div>
                     <div className="help"><ImgTxt src="/city-animals-4.svg" width="80px" text="Don’t recycle 
 caps/lids"/></div>
-                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" text="Animals mistakenly consume plastics."/></div>
+                    <div className="help"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA" bottom="65px" text="Animals mistakenly consume plastics."/></div>
                 </div>
                
                
                 <div className="grid">
-                    <Start routeTo="/UrbanAnimals" spacing="2px" text="Earn your badge" fontsize="16px" width="250px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/UrbanQuiz" spacing="2px" text="Earn your badge" fontsize="16px" width="250px" padding="10px" height="52px" marginright="7px"></Start>
                     
                 </div>
             </div>
