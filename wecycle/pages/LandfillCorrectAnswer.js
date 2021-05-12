@@ -33,9 +33,9 @@ const Titleholder = styled.div`
         align-items: center;
     `;
 
-const Flags = styled.div`
-    display:flex;
-    flex-direction:row;
+const Quizimg = styled.img`
+    width:150px;
+    height:150px;
 `;
 
 const ButtonHolder = styled.div`
@@ -74,70 +74,30 @@ export default function QuizTimeUrban({
 }){
 
     const [texts, setTexts] = useState("");
-    const [title, setTitle] = useState("Study Other Regions");
     const [source , setSource] = useState("/ForwardButton.svg");
     const [route, setRoute] = useState("/regions")
-    const [backgrounds, setBackground] = useState("#FFEAAD")
-
-
-
-    const HandleGarbage = () => {
-        setTexts("Incorrect! Canadians produce a lot of plastic waste; an estimated 3.3 million tonnes per year.")
-        setTitle("Try Again")
-        setSource("/reload.svg")
-        setRoute("/marinequiz")
-        setBackground("#F66646")
-        shaking()
-    }
-    const HandleRecycle = ({}) => {
-        setTexts("Correct! Canada's Landfill is around the size of Monaco.")
-        setTitle("Study Other Regions")
-        setSource("/ForwardButton.svg")
-        setRoute("/LandfillCorrectAnswer")
-        setBackground("#4ACE8F")
-    }
-    const HandleCompost = () => {
-        setTexts("Incorrect! Canadians produce a lot of plastic waste; an estimated 3.3 million tonnes per year.")
-        setTitle("Try Again")
-        setSource("/reload.svg")
-        setRoute("/marinequiz")
-        setBackground("#F66646")
-        shaking()
-    }
-
-    function shaking()
-    {
-        document.getElementById('box').style.animation = "shake 0.2s 1";
-    }
+    // const [backgrounds, setBackground] = useState("#FFEAAD")
 
     return (
         <QuizCont>
             <Menu routeTo="/MoreLandfill" title="Quiz Time" borderbottom="none"></Menu>
-            <Box id="box" background={backgrounds}>
+            <Box id="box" background="#FFEAAD">
             <Titleholder>
-                <Header text="Roughly how big do you think Canada’s landfill is?" />
+                <Header text="Congratulations! You earned a landfill badge" />
                 <Bodytext 
-                Text={texts}
+                Text="Canada's Landfill is around the size of Monaco."
                 textwidth="250px"/>
-                <Flags>
-                    <Flag imagesize="105px" image="/newzealand.png" country="New Zealand"/>
-                    <Flag image="/italy.png" country="Italy"/>
-                    <Flag/>
-                </Flags>
+                <Quizimg src="/landfillBadge.svg"/>
             </Titleholder>
             </Box>
 
             <ButtonHolder>
                 <Marinequiz
-                onGarbageClick={HandleGarbage}
-                onRecycleClick={HandleRecycle}
-                onCompostClick={HandleCompost}
                 />
             </ButtonHolder>
 
             <StudyMore>
                 <StudyOthers
-                title={title}
                 source={source}
                 routeTo={route}
                 />

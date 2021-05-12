@@ -5,6 +5,7 @@ import {useRouter} from 'next/router';
 const ButtonCont = styled.div`
 display: flex;
 justify-content: space-evenly;
+margin-bottom: 80px;
   
 `;
 
