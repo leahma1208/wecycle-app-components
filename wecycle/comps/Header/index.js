@@ -15,7 +15,7 @@ const Text = styled.p `
     font-family: ${props=>props.fontfamily};
     color: ${props=>props.color};
     letter-spacing: 0.07em;
-    margin-bottom: 20px;
+    margin-bottom: ${props=>props.marginbottom};
     margin-left: ${props=>props.left};
 `;
 
@@ -28,11 +28,12 @@ const Header = ({
     text="Here are some organizations you can volunteer with!",
     margintop="20px",
     width="329px",
-    left="0rem"
+    left="0rem",
+    marginbottom="20px"
 }) =>{
     
     return <Container width={width}>
-        <Text left={left} fontfamily={fontfamily} fontsize={fontsize} weight={weight} color={color} margintop={margintop}>
+        <Text marginbottom={marginbottom} left={left} fontfamily={fontfamily} fontsize={fontsize} weight={weight} color={color} margintop={margintop}>
             {text}
         </Text>
     </Container>

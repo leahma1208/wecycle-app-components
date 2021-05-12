@@ -7,7 +7,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.p `
-    max-width: 235px;
+    max-width: 290px;
     font-size: 13px;
     font-weight: 400;
     color: black;
