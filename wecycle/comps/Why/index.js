@@ -29,7 +29,7 @@ bottom:19px;
 
 
 const InfoCont = styled.div`
-max-width: 320px;
+max-width: 300px;
 min-height: 56px;
 background-color:${props=>props.bgcolor2};
 border-radius: 12px;

@@ -33,6 +33,7 @@ const Button = styled.div`
     font-size: ${props=>props.fontsize};
     justify-content:center;
     align-items:center;
+    font-weight: 700;
 
     
     :hover{

@@ -7,6 +7,10 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
 import MovingImage2 from '../comps/MovingImage2';
+import Medal from '../comps/Medal';
+import Progress from '../comps/Progress'
+import ImgTxt from '../comps/ImgText'
+import Why from '../comps/Why'
 
 
 const Holder = styled.div `
@@ -14,9 +18,14 @@ const Holder = styled.div `
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center
+    align-items:center;
 }
 
+.margin{
+    margin-bottom: 50px;
+    
+
+}
 #box {
     height: auto;
     width: 100%;
@@ -36,9 +45,9 @@ const Holder = styled.div `
     margin-left:30px;
 }
 .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom:60px;
+   display:flex;
+   justify-content:center;
+   margin-bottom: 80px;
 }
 
 .moving {
@@ -67,20 +76,28 @@ export default function UrbanPeople(){
                 <Menu routeTo="/UrbanCities"title="People"></Menu>
             </div>
             <div className="container">
-                <Header left="10px" text="How are plastics in Urban Cities affecting people?"></Header>
+                <Header left="10px"width="350px"text="How are plastics in Urban Cities affecting people?"></Header>
+                
+                <div className="margin"><Medal/></div>
+                <div className="margin"><Progress color="#AFDDCD"/></div>
             </div>
             <div id="box" className="container">
-                <Header text="Plastic in our city" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="Plastic and other packaging waste makes up around 30 percent of total U.S. waste annually. Of the 34.5 million tons of plastic waste generated each year, only 9 percent is recycled, with most of the recyclable waste shipped to other countries for processing."></Bodytext>
-                <MovingImage2 image="/waste.svg"/>
-                <Bodytext marginbottom="20px;"Text="However, the receiving countries often lack the infrastructure to properly process these materials, which leads to U.S. waste ending up in landfills and ecosystems across the globe."></Bodytext>
-                <div className="row">
-                    <Didyouknow headercolor="#87CCB5" backcolor="#C0ECDD" informationtext="Precycle, based in Brooklyn, is a grocery store where, customers bring their own containers to fill up with any of the available locally-sourced and seasonal bulk products."></Didyouknow>
-                    <img className="moving" id="image" src="/store.svg" width="100px"></img>
+                <Header text="Plastic in our city" margintop="50px;" marginbottom="0px;"></Header>
+                <Bodytext marginbottom="0px;"Text="Of the 34.5 million tons of plastic waste generated each year, only 9 percent is recycled, with most of the recyclable waste shipped to other countries for processing."></Bodytext>
+                <MovingImage2 image="/city-people-plastic.svg"/>
+                <Bodytext marginbottom="20px;"Text="However, because recipient countries often lack the infrastructure to properly dispose of these materials, waste becomes in ecosystems around the world."></Bodytext>
+                
+                <div className="container">
+                    <Header marginbottom="40px" text="How can you help?"/>
+                    <div className="margin"><ImgTxt/></div>
+                    <div className="margin"><Why bgcolor1="#76BCA5" bgcolor2="#D4F5EA"/></div>
+                    <div className="margin"><ImgTxt src="/coffeecups.svg" text="Don't throw coffee cups on the street."/></div>
                 </div>
+               
+               
                 <div className="grid">
-                    <Start routeTo="/UrbanQuiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/MoreUrban" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/UrbanQuiz" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    
                 </div>
             </div>
             <div>

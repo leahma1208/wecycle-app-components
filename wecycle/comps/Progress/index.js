@@ -19,7 +19,7 @@ letter-spacing: 0.1em;
 
 
 const Bar = styled.div`
-width: 360px;
+width: 320px;
 height: 10px;
 background-color:#C4C4C4;
 `;
