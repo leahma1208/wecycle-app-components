@@ -7,107 +7,123 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
 import MovingImage2 from '../comps/MovingImage2';
+import Medal from '../comps/Medal';
+import Progress from '../comps/Progress'
+import ImgTxt from '../comps/ImgText'
+import Why from '../comps/Why'
 
 
 const Holder = styled.div `
-display:flex;
-flex-direction:column;
-
 .container {
     display:flex;
-    justify-content:center;
-    align-items:center;
     flex-direction:column;
     justify-content:center;
-    align-items:center
+    align-items:center;
+}
+
+.top {
+    display:flex;
+    flex-direction:column;
+    width: 80vw;
+    margin:auto;
+   justify-content:center;
 }
 
 
+.margin{
+    margin-bottom: 20px;
+    
+}
 #box {
-    height:auto;
-    width:100%;
+    height: auto;
+    width: 100%;
     background-color: #ADBAFF;
-    border-radius: 5rem 5rem 0rem 0rem;
-    margin-top: 20px;
+    border-radius: 2rem 2rem 0rem 0rem;
+    margin-top: 1rem;
 }
 
 .row {
     display:flex;
-    justify-content:center;
+    justify-content:center
     width:100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 #image {
     display:flex;
     margin-left:30px;
 }
-
 .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom:60px;
+   display:flex;
+   justify-content:center;
+   margin-bottom: 80px;
 }
-
 
 .moving {
     position: relative;
     overflow: hidden;
     animation: slideIn 3s infinite;
+    animation-direction:reverse;
 }
-
-#bar-holder {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color:red;
-}
-
 @keyframes slideIn {
     0%{
         transform: rotate(0deg);
     }
     50%{
-        transform: rotate(15deg);
+        transform: rotate(7deg);
     }
     100%{
         transform: rotate(0deg);
     }
 }
 
+
+.help{
+    margin-bottom: 50px;
+    
+}
+
+.medal{
+    margin-bottom: 20px;
+   display:flex;
+   align-itmes: start;
+    
+}
 `
 
-export default function MarineEnviro(){
+export default function UrbanEnvironment(){
     return (
         <Holder>
             <div>
-                <Menu routeTo="/Marine" title="Environment"></Menu>
+                <Menu routeTo="/UrbanCities"title="Environment"></Menu>
             </div>
-            <div className="container">
-                <Header text="How is plastic in Oceans affecting the environment?"></Header>
+            
+                <div className="container"><Header left="10px"width="350px"text="How is plastic in Oceans affecting the environment?"></Header></div>
+            <div className="top">  
+                <div className="medal"><Medal text="Keep going you’re halway there!"/></div>
+                <div className="margin"><Progress color="#ADBAFF" width="160px;"/></div>
             </div>
             <div id="box" className="container">
-                <Header text="Where does this plastic go?" margintop="50px;"></Header>
-                <Bodytext Text="How does it get into the sea? Plastic left on the ground as litter often blows into creeks and rivers, eventually ending up in the ocean. "></Bodytext>
-                <MovingImage2 image="/ocean-enviro-1.svg"/>
-
-                <Bodytext marginbottom="15px;"Text="And because plastic trash is different from other types of waste—it doesn’t decompose back into nature like an apple core or a piece of paper—it stays in the ocean forever. "></Bodytext>
-                <MovingImage2 image="/ocean-enviro-2.svg"/>
+                <Header text="Where does this plastic go?" margintop="50px;" marginbottom="0px;"></Header>
+                <Bodytext marginbottom="0px;"Text="How does it get into the sea? Plastic left on the ground as litter often blows into creeks and rivers, eventually ending up in the ocean."></Bodytext>
+                <MovingImage2 image="/city-enviro-1.svg"/>
+                <Bodytext marginbottom="20px;"Text="And because plastic trash is different from other types of waste—it doesn’t decompose back into nature like an apple core or a piece of paper—it stays in the ocean forever."></Bodytext>
                 
-
-                <div className="row">
-                    <Didyouknow informationtext="Scientists think that 8.8 million tons of plastic winds up in the ocean every year—that’s as if you stacked up five plastic grocery bags full of trash on top of each other on every foot of coastline in the world."></Didyouknow>
-                    <img className="moving" id="image" src="/envirofish.svg" width="120px"></img>
+                <div className="container">
+                    <Header marginbottom="40px" text="How can you help?"/>
+                    <div className="help"><ImgTxt src="/city-enviro-2.svg" width="70px" text="Use garden safe plastic bags"/></div>
+                    <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="65px"/></div>
+                    <div className="help"><ImgTxt src="/city-enviro-3.svg" text="Don’t keep plastic laying around"/></div>
+                    <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="85px" text="Plastic breaks down into microplastics entering sewers and farmland"/></div>
                 </div>
+               
+               
                 <div className="grid">
-                    <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/More" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/UrbanAnimals" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    
                 </div>
-                <div id="bar-holder">
-                    <BottomBar routeTo1="/Marine"></BottomBar>
-                </div>
-
+            </div>
+            <div>
+                <BottomBar routeTo1="/UrbanPeople"></BottomBar>
             </div>
 
         </Holder>

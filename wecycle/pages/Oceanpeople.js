@@ -7,6 +7,10 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
 import MovingImage2 from '../comps/MovingImage2';
+import Medal from '../comps/Medal';
+import Progress from '../comps/Progress'
+import ImgTxt from '../comps/ImgText'
+import Why from '../comps/Why'
 
 
 const Holder = styled.div `
@@ -14,34 +18,35 @@ const Holder = styled.div `
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center
+    align-items:center;
 }
 
+.margin{
+    margin-bottom: 20px;
+    
+}
 #box {
-    height:auto;
-    width:100%;
+    height: auto;
+    width: 100%;
     background-color: #ADBAFF;
-    border-radius: 5rem 5rem 0rem 0rem;
-    margin-top: 20px;
+    border-radius: 2rem 2rem 0rem 0rem;
+    margin-top: 1rem;
 }
 
 .row {
     display:flex;
-    justify-content:center;
+    justify-content:center
     width:100%;
-    margin-bottom: 30px;
-    margin-top: 30px;
 }
 
 #image {
     display:flex;
     margin-left:30px;
 }
-
 .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom:60px;
+   display:flex;
+   justify-content:center;
+   margin-bottom: 80px;
 }
 
 .moving {
@@ -49,10 +54,6 @@ const Holder = styled.div `
     overflow: hidden;
     animation: slideIn 3s infinite;
     animation-direction:reverse;
-}
-
-.flex{
-    display:flex;
 }
 @keyframes slideIn {
     0%{
@@ -67,38 +68,42 @@ const Holder = styled.div `
 }
 
 
+.help{
+    margin-bottom: 50px;
+    
+}
 `
 
-export default function OceanPeople(){
+export default function UrbanPeople(){
     return (
         <Holder>
             <div>
-                <Menu routeTo="Marine"title="People"></Menu>
+                <Menu routeTo="/UrbanCities"title="People"></Menu>
             </div>
             <div className="container">
-                <Header left="5px" text="How are plastics in oceans affecting people?"></Header>
+                <Header left="10px"width="350px"text="How is plastic in Oceans affecting people?"></Header>
+                
+                <div className="margin"><Medal text="Do you want to earn a  marine badge? Learn about the People, Environment, and Animals"/></div>
+                <div className="margin"><Progress color="#ADBAFF"/></div>
             </div>
             <div id="box" className="container">
-                <Header text="Plastic affecting human health" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="There are different types of ways that plastic is dangerous for humans. "></Bodytext>
-                <MovingImage2 image="/ocean-people-1.svg"/>
-
-                <Bodytext Text="Direct toxicity from plastics comes from lead, cadmium, and mercury. These toxins have also been found in many fish in the ocean, which is very dangerous for humans. "></Bodytext>
-                <MovingImage2 image="/ocean-people-2.svg"/>
-
-                <Bodytext Text="Diethylhexyl phthalate contained in some plastics, is a toxic carcinogen, meaning that it  has the ability to cause cancer.  "></Bodytext>
-               
-                <MovingImage2 image="/ocean-people-3.svg"/>
-                
-                
-                
-                <div className="row">
-                    <Didyouknow informationtext="Other toxins in plastics are directly linked to cancers, birth defects, immune system problems, and childhood developmental issues."></Didyouknow>
-                    <img className="moving" id="image" src="/ocean-people-4.svg" width="90px"></img>
+                <Header text="Plastic affecting human health" margintop="50px;" marginbottom="0px;"></Header>
+                <Bodytext marginbottom="0px;"Text="There are different types of ways that plastic is dangerous for humans."></Bodytext>
+                <MovingImage2 image="/city-people-plastic.svg"/>
+                <Bodytext marginbottom="20px;"Text="Other toxins in plastics are directly linked to cancers, birth defects, immune system problems, and childhood developmental issues."></Bodytext>
+                <MovingImage2 image="/city-people-plastic.svg"/>
+                <div className="container">
+                    <Header marginbottom="40px" text="How can you help?"/>
+                    <div className="help"><ImgTxt text="Use your own bottles!" /></div>
+                    <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="70px" text="Bisphenol A causes cancer and heart disease!"/></div>
+                    <div className="help"><ImgTxt src="/coffeecups.svg" text="Avoid use of styrofoam"/></div>
+                    <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="70px" text="Styrofoam breaks down to micro plastics!"/></div>
                 </div>
+               
+               
                 <div className="grid">
-                    <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/More" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
+                    <Start routeTo="/marineenviro" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    
                 </div>
             </div>
             <div>
