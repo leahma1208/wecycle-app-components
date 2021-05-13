@@ -91,12 +91,12 @@ export default function LandfillEnvironment(){
                 <ImgText src="/exterminate.svg" width="100px" text="Don’t use chemicals to exterminate insects"></ImgText>
                 </div>
                 <div className="help">
-                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="The chemicals will kill insects we need to decompose"></Why>
+                <Why bgcolor1="#FFD862" bgcolor2="#FFF7DE" text="The chemicals will kill insects we need to decompose"></Why>
                 </div>
                 <div className="help">
                 <ImgText src="/plasticbag.svg" width="90px" text="Avoid to using plastic bag"></ImgText>
                 </div>
-                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="A plastic bag takes the longest to decompose"></Why>
+                <Why bgcolor1="#FFD862" bgcolor2="#FFF7DE" text="A plastic bag takes the longest to decompose"></Why>
                 <div className="grid">
                     <Start routeTo="/LandfillAnimals" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
                 </div>

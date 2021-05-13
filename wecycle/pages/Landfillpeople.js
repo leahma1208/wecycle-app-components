@@ -63,7 +63,10 @@ const Holder = styled.div `
 }
 
 .help{
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+}
+.help2{
+    margin-bottom: 40px;
     
 }
 `
@@ -89,13 +92,13 @@ export default function LandfillPeople(){
                 <div className="help">
                 <ImgText src="/plant.png" width="90px" text="Reuse what you can!"></ImgText>
                 </div>
-                <div className="help">
-                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="It can reduce waste emissions"></Why>
+                <div className="help2">
+                <Why bgcolor1="#FFD862" bgcolor2="#FFF7DE" text="Reusing materials again can take fewer resources from the Earth"></Why>
                 </div>
                 <div className="help">
-                <ImgText src="/plastics.svg" width="90px" text="Reuse what you can!"></ImgText>
+                <ImgText src="/plastics.svg" width="90px" text="Avoid to using single use plastics!"></ImgText>
                 </div>
-                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="It can reduce waste emissions"></Why>
+                <Why bgcolor1="#FFD862" bgcolor2="#FFF7DE" text="It accounts for the largest proportion of landfills"></Why>
                 <div className="grid">
                     <Start routeTo="/LandfillEnvironment" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
                 </div>
