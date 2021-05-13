@@ -66,7 +66,7 @@ export default function MarineAnimals(){
                     <Header margintop="85px" left="5px" text="You are now ready for the real world!"></Header>
                     <Bodytext marginbottom="20px;"Text="Find opportunities to make an impact on our world today."></Bodytext>
                 </HeaderCont>
-                <TakeAction bgcolor="#C0ECDD" shadow="0px 0px 43px #AFDDCE" routeTo="/Programs" />
+                <TakeAction bgcolor="#C0ECDD" shadow="0px 0px 43px #AFDDCE" routeTo="/ProgramsUrban" />
                 <Linecont>
                     <hr width="138px" color="#3DA481"/>
                     <p>or</p>
@@ -79,7 +79,7 @@ export default function MarineAnimals(){
                     <Start text="Go back to regions" fontsize="16px" width="300px" height="45px" marginright="7px" spacing="2px" padding="10px" routeTo="/regions" />
                 </ButtonCont>
                 <div className="bottom">
-                    <BottomBar routeTo1="/Marine"></BottomBar>
+                    <BottomBar routeTo1="/UrbanCorrectAnswer"></BottomBar>
                 </div>
             </BG>
         </Holder>

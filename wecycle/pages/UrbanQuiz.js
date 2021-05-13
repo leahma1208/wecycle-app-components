@@ -9,6 +9,7 @@ import StudyOthers from '../comps/StudyOthers'
 import React, {useState} from 'react';
 import Marinequiz from '../comps/Urbanquiz'
 import BottomBar from '../comps/BottomBar';
+import { useRouter } from 'next/router';
 
 const QuizCont = styled.div`
 
@@ -104,6 +105,8 @@ export default function QuizTimeUrban({
         shaking()
     }
 
+    const router = useRouter();
+
     function shaking()
     {
         document.getElementById('box').style.animation = "shake 0.2s 1";
@@ -125,7 +128,7 @@ export default function QuizTimeUrban({
             <ButtonHolder>
                 <Marinequiz
                 onGarbageClick={HandleGarbage}
-                onRecycleClick={HandleRecycle}
+                onRecycleClick={()=>router.push("/UrbanCorrectAnswer")}
                 onCompostClick={HandleCompost}
                 />
             </ButtonHolder>

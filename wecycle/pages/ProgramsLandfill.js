@@ -151,7 +151,7 @@ export default function Programs (){
             </Bubbleholder>
 
 
-            <BottomBar routeTo1="/MoreLandfill"></BottomBar>
+            <BottomBar routeTo1="/TakeActionLandfill"></BottomBar>
         </ProgramCont>
 
     )

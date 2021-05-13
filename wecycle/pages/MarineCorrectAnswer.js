@@ -103,7 +103,7 @@ export default function QuizTime({
                 routeTo="TakeActionMarine"
                 />
             </StudyMore>
-            <BottomBar routeTo1="/marineanimals"></BottomBar>
+            <BottomBar routeTo1="/marinequiz"></BottomBar>
         </QuizCont>
     )
 }

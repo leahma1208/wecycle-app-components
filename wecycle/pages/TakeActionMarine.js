@@ -79,7 +79,7 @@ export default function MarineAnimals(){
                     <Start text="Go back to regions" fontsize="16px" width="300px" height="45px" marginright="7px" spacing="2px" padding="10px" routeTo="/regions" />
                 </ButtonCont>
                 <div className="bottom">
-                    <BottomBar routeTo1="/Marine"></BottomBar>
+                    <BottomBar routeTo1="/MarineCorrectAnswer"></BottomBar>
                 </div>
             </BG>
         </Holder>
