@@ -23,15 +23,15 @@ const Holder = styled.div `
 
 .top {
     display:flex;
+    align-items:center;
     flex-direction:column;
-    width: 80vw;
-    margin:auto;
-   justify-content:center;
+    width: 100%;
 }
 
 
 .margin{
     margin-bottom: 20px;
+   
     
 }
 #box {
@@ -86,6 +86,7 @@ const Holder = styled.div `
     margin-bottom: 20px;
    display:flex;
    align-itmes: start;
+   margin-left:-50px;
     
 }
 `
@@ -97,7 +98,7 @@ export default function UrbanEnvironment(){
                 <Menu routeTo="/UrbanCities"title="Environment"></Menu>
             </div>
             
-                <div className="container"><Header left="10px"width="350px"text="How is plastic in Urban Cities affecting the Environment?"></Header></div>
+            <div className="container"><Header left="10px"width="350px"text="How is plastic in Urban Cities affecting the Environment?"></Header></div>
             <div className="top">  
                 <div className="medal"><Medal text="Keep going you’re halway there!"/></div>
                 <div className="margin"><Progress color="#AFDDCD" width="160px;"/></div>
