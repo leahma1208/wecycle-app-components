@@ -90,12 +90,12 @@ export default function LandfillAnimals(){
                 <ImgText src="/can.svg" width="70px" text="Always recycle aluminum cans!"></ImgText>
                 </div>
                 <div className="help">
-                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="Aluminum cans end up in landfills which becomes food for animals"></Why>
+                <Why bgcolor1="#FFD862" bgcolor2="#FFF7DE" text="Aluminum cans end up in landfills which becomes food for animals"></Why>
                 </div>
                 <div className="help">
                 <ImgText src="/cup.svg" width="50px" text="Recycle plastic cups!"></ImgText>
                 </div>
-                <Why bgcolor1="#FFE082" bgcolor2="#FFF7DE" text="Birds can mistakenly consume plastics in the landfill!"></Why>
+                <Why bgcolor1="#FFD862" bgcolor2="#FFF7DE" text="Birds can mistakenly consume plastics in the landfill!"></Why>
                 <div className="grid">
                     <Start routeTo="/LandfillQuiz" spacing="2px" text="Earn your badge" fontsize="16px" width="250px" padding="10px" height="52px" marginright="7px"></Start>
                 </div>
