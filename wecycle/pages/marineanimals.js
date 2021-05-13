@@ -7,6 +7,10 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import BottomBar from '../comps/BottomBar';
 import MovingImage2 from '../comps/MovingImage2';
+import Medal from '../comps/Medal';
+import Progress from '../comps/Progress'
+import ImgTxt from '../comps/ImgText'
+import Why from '../comps/Why'
 
 
 const Holder = styled.div `
@@ -15,42 +19,42 @@ const Holder = styled.div `
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    width:100%;
-
-
-    .bottom {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
 }
 
-#box {
+.top {
     display:flex;
+    align-items:center;
+    flex-direction:column;
+    width: 100%;
+}
+
+
+.margin{
+    margin-bottom: 20px;
+    
+}
+#box {
     height: auto;
-    width:100%;
+    width: 100%;
     background-color: #ADBAFF;
-    border-radius: 5rem 5rem 0rem 0rem;
-    margin:0px;
+    border-radius: 3rem 3rem 0rem 0rem;
+    margin-top: 1rem;
 }
 
 .row {
     display:flex;
-    justify-content:center;
+    justify-content:center
     width:100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 #image {
     display:flex;
     margin-left:30px;
 }
-
 .grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom:60px;
+   display:flex;
+   justify-content:center;
+   margin-bottom: 80px;
 }
 
 .moving {
@@ -59,12 +63,6 @@ const Holder = styled.div `
     animation: slideIn 3s infinite;
     animation-direction:reverse;
 }
-
-.flex{
-    display:flex;
-   
-}
-
 @keyframes slideIn {
     0%{
         transform: rotate(0deg);
@@ -76,41 +74,55 @@ const Holder = styled.div `
         transform: rotate(0deg);
     }
 }
+
+
+.help{
+    margin-bottom: 50px;
+    
+}
+
+.medal{
+    margin-bottom: 20px;
+    
+    
+}
 `
 
-export default function MarineAnimals(){
+export default function UrbanEnvironment(){
     return (
         <Holder>
             <div>
-                <Menu routeTo="/Marine" title="Animals"></Menu>
+                <Menu routeTo="/UrbanCities"title="Animals"></Menu>
             </div>
-            <div className="container">
-                <Header left="5px" text="How is plastic in Oceans affecting animals?"></Header>
+            
+                <div className="container"><Header left="10px"width="350px"text="Sea Turtles"></Header></div>
+            <div className="top">  
+                <div className="medal"><Medal text="So close! Scroll to the bottom to recieve your badge"/></div>
+                <div className="margin"><Progress color="#ADBAFF" width="320px;"/></div>
             </div>
             <div id="box" className="container">
-                <Header text="Sea Turtles" margintop="50px;"></Header>
-                <Bodytext marginbottom="20px;"Text="A sea turtle swims through the water and spots a white blob floating near the surface. “Yum!” it thinks."></Bodytext>
-                <MovingImage2 image="/ocean-animals-1.svg"/>
-
+                <Header text="Sea Turtles" margintop="50px;" marginbottom="0px;"></Header>
+                <Bodytext marginbottom="0px;"Text="A sea turtle swims through the water and spots a white blob floating near the surface. “Yum!” it thinks."></Bodytext>
+                <MovingImage2 image="/city-enviro-1.svg"/>
                 <Bodytext marginbottom="20px;"Text="“A jellyfish!” Chasing after its dinner, the turtle swallows the item. But the floating blob isn’t a jelly—it’s a plastic bag that could make the sea turtle sick."></Bodytext>
-               <div className="flex">
-                <MovingImage2 image="/ocean-animals-2.svg"/>
-                <MovingImage2 image="/ocean-animals-2-2.svg"/>
-                </div>
-                
-                
-                <div className="row">
-                    <Didyouknow informationtext="This sea creature isn’t alone: Over 700 species of marine animals have been reported to have eaten or been entangled in plastic."></Didyouknow>
-                    <img className="moving" id="image" src="/ocean-animals-3.svg" width="100px"></img>
-                </div>
-                <div className="grid">
-                    <Start routeTo="/marinequiz" spacing="2px" text="Take Quiz!" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
-                    <Start routeTo="/More" spacing="2px" text="How to help" fontsize="16px" width="166px" padding="0px" height="52px" marginleft="7px"></Start>
-                </div>
-                <div className="bottom">
-                    <BottomBar routeTo1="/Marine"></BottomBar>
-                </div>
+                <MovingImage2 image="/city-enviro-1.svg"/>
 
+                <div className="container">
+                    <Header marginbottom="40px" text="How can you help?"/>
+                    <div className="help"><ImgTxt src="/city-enviro-2.svg" width="70px" text="Use reusable straws!"/></div>
+                    <div className="help"><Why text="Plastic straws get stuck on turtles nose!" bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="65px"/></div>
+                    <div className="help"><ImgTxt src="/city-enviro-3.svg" text="Reuse plastic bags"/></div>
+                    <div className="help"><Why text="Marine animals mistakenly eat plastic bags!" bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="85px" text="Plastic breaks down into microplastics entering sewers and farmland"/></div>
+                </div>
+               
+               
+                <div className="grid">
+                <Start routeTo="/marinequiz" spacing="2px" text="Earn your badge" fontsize="16px" width="250px" padding="10px" height="52px" marginright="7px"></Start>
+                    
+                </div>
+            </div>
+            <div>
+                <BottomBar routeTo1="/Oceanpeople"></BottomBar>
             </div>
 
         </Holder>

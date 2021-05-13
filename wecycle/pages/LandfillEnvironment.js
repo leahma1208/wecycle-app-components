@@ -24,8 +24,7 @@ const Holder = styled.div `
 #box {
     height: auto;
     background-color: #FEE9A8;
-    border-radius: 5rem 5rem 0rem 0rem;
-    min-width: 25rem;
+    border-radius: 3rem 3rem 0rem 0rem;
     margin-top: 20px;
 }
 

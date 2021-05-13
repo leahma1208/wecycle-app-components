@@ -23,10 +23,9 @@ const Holder = styled.div `
 
 .top {
     display:flex;
+    align-items:center;
     flex-direction:column;
-    width: 80vw;
-    margin:auto;
-   justify-content:center;
+    width: 100%;
 }
 
 
@@ -38,7 +37,7 @@ const Holder = styled.div `
     height: auto;
     width: 100%;
     background-color: #ADBAFF;
-    border-radius: 2rem 2rem 0rem 0rem;
+    border-radius: 3rem 3rem 0rem 0rem;
     margin-top: 1rem;
 }
 
@@ -84,8 +83,8 @@ const Holder = styled.div `
 
 .medal{
     margin-bottom: 20px;
-   display:flex;
-   align-itmes: start;
+    margin-left:-50px;
+    
     
 }
 `
@@ -118,12 +117,12 @@ export default function UrbanEnvironment(){
                
                
                 <div className="grid">
-                    <Start routeTo="/UrbanAnimals" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
+                    <Start routeTo="/marineanimals" spacing="2px" text="Next Page >" fontsize="16px" width="166px" padding="10px" height="52px" marginright="7px"></Start>
                     
                 </div>
             </div>
             <div>
-                <BottomBar routeTo1="/UrbanPeople"></BottomBar>
+                <BottomBar routeTo1="/Oceanpeople"></BottomBar>
             </div>
 
         </Holder>
