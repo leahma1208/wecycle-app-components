@@ -101,7 +101,7 @@ export default function QuizTimeUrban({
                 routeTo="TakeActionCity"
                 />
             </StudyMore>
-            <BottomBar routeTo1="/UrbanAnimals"></BottomBar>
+            <BottomBar routeTo1="/UrbanQuiz"></BottomBar>
         </QuizCont>
     )
 }
