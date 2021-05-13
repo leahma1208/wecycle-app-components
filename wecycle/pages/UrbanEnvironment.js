@@ -38,7 +38,7 @@ const Holder = styled.div `
     height: auto;
     width: 100%;
     background-color: #AFDDCD;
-    border-radius: 5rem 5rem 0rem 0rem;
+    border-radius: 3rem 3rem 0rem 0rem;
     margin-top: 1rem;
 }
 

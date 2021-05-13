@@ -29,7 +29,7 @@ const Holder = styled.div `
     height: auto;
     width: 100%;
     background-color: #ADBAFF;
-    border-radius: 2rem 2rem 0rem 0rem;
+    border-radius: 3rem 3rem 0rem 0rem;
     margin-top: 1rem;
 }
 
