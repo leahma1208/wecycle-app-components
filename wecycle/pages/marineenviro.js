@@ -104,15 +104,15 @@ export default function UrbanEnvironment(){
             <div id="box" className="container">
                 <Header text="Where does this plastic go?" margintop="50px;" marginbottom="0px;"></Header>
                 <Bodytext marginbottom="0px;"Text="How does it get into the sea? Plastic left on the ground as litter often blows into creeks and rivers, eventually ending up in the ocean."></Bodytext>
-                <MovingImage2 image="/city-enviro-1.svg"/>
+                <MovingImage2 image="/deadwhale.svg"/>
                 <Bodytext marginbottom="20px;"Text="And because plastic trash is different from other types of waste—it doesn’t decompose back into nature like an apple core or a piece of paper—it stays in the ocean forever."></Bodytext>
                 
                 <div className="container">
                     <Header marginbottom="40px" text="How can you help?"/>
-                    <div className="help"><ImgTxt src="/city-enviro-2.svg" width="70px" text="Use garden safe plastic bags"/></div>
-                    <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="65px"/></div>
-                    <div className="help"><ImgTxt src="/city-enviro-3.svg" text="Don’t keep plastic laying around"/></div>
-                    <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="85px" text="Plastic breaks down into microplastics entering sewers and farmland"/></div>
+                    <div className="help"><ImgTxt src="/mask.svg" width="70px" text="Throw away your mask"/></div>
+                    <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="65px" text="More than 1.56 billion face masks could end up polluting oceans" /></div>
+                    <div className="help"><ImgTxt src="/plasticcarton.svg" text="Avoid single use plastic"/></div>
+                    <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="85px" text="It takes 450 years or more to break regular plastic down into microplastic"/></div>
                 </div>
                
                

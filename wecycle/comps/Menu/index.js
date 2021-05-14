@@ -265,9 +265,8 @@ if(opensub3){
                     <People className="sub" onClick={()=>router.push(routeToMarinePeople)} >People</People>
                     <Environment className="sub"  onClick={()=>router.push(routeToMarineEnvironment)} >Environment</Environment>
                     <Animals className="sub"  onClick={()=>router.push(routeToMarineAnimals)} >Animals</Animals>
-                    <Howto className="sub"  onClick={()=>router.push(routeToMarineHowto)}>How to recycle</Howto>
-                    <Volunteer className="sub"  onClick={()=>router.push(routeToMarineVolunteer)} >Volunteer</Volunteer>
                     <Quitime className="sub"  onClick={()=>router.push(routeToMarineQuiz)} >Quiz Time</Quitime>
+                    <Volunteer className="sub"  onClick={()=>router.push(routeToMarineVolunteer)} >Volunteer</Volunteer>
                 </Infoholder>
             <RegionHolder2 className="regionbutton" onClick={()=>setOpensub2(!opensub2)}>
                 <UrbanCities className="region" onClick={()=>router.push(routeToUrban)} >Urban Cities</UrbanCities>
@@ -277,9 +276,8 @@ if(opensub3){
                     <People className="sub"  onClick={()=>router.push(routeToUrbanPeople)} >People</People>
                     <Environment className="sub"  onClick={()=>router.push(routeToUrbanEnvironment)}>Environment</Environment>
                     <Animals className="sub"  onClick={()=>router.push(routeToUrbanAnimals)}>Animals</Animals>
-                    <Howto className="sub"  onClick={()=>router.push(routeToUrbanHowto)}>How to recycle</Howto>
-                    <Volunteer className="sub"  onClick={()=>router.push(routeToUrbanVolunteer)}>Volunteer</Volunteer>
                     <Quitime className="sub" onClick={()=>router.push(routeToUrbanQuiz)}>Quiz Time</Quitime>
+                    <Volunteer className="sub"  onClick={()=>router.push(routeToUrbanVolunteer)}>Volunteer</Volunteer>
                 </Infoholder2>
             <RegionHolder3 className="regionbutton" onClick={()=>setOpensub3(!opensub3)}>
                 <Landfill onClick={()=>router.push(routeToLandfill)} className="region" >Landfill</Landfill>
@@ -289,9 +287,8 @@ if(opensub3){
                 <People className="sub" onClick={()=>router.push(routeToLandfillPeople)} >People</People>
                 <Environment className="sub" onClick={()=>router.push(routeToLandfillEnvironment)}>Environment</Environment>
                 <Animals className="sub" onClick={()=>router.push(routeToLandfillAnimals)}>Animals</Animals>
-                <Howto className="sub" onClick={()=>router.push(routeToLandfillHowto)}>How to recycle</Howto>
-                <Volunteer className="sub" onClick={()=>router.push(routeToLandfillVolunteer)}>Volunteer</Volunteer>
                 <Quitime className="sub" onClick={()=>router.push(routeToLandfillQuiz)}>Quiz Time</Quitime>
+                <Volunteer className="sub" onClick={()=>router.push(routeToLandfillVolunteer)}>Volunteer</Volunteer>
             </Infoholder3>
 
             {/* <Marine className="region" >Marine</Marine>

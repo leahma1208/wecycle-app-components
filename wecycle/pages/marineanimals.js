@@ -103,15 +103,15 @@ export default function UrbanEnvironment(){
             <div id="box" className="container">
                 <Header text="Sea Turtles" margintop="50px;" marginbottom="0px;"></Header>
                 <Bodytext marginbottom="0px;"Text="A sea turtle swims through the water and spots a white blob floating near the surface. “Yum!” it thinks."></Bodytext>
-                <MovingImage2 image="/city-enviro-1.svg"/>
-                <Bodytext marginbottom="20px;"Text="“A jellyfish!” Chasing after its dinner, the turtle swallows the item. But the floating blob isn’t a jelly—it’s a plastic bag that could make the sea turtle sick."></Bodytext>
-                <MovingImage2 image="/city-enviro-1.svg"/>
+                <MovingImage2 image="/seaturtles.svg"/>
+                <Bodytext marginbottom="20px;" Text="“A jellyfish!” Chasing after its dinner, the turtle swallows the item. But the floating blob isn’t a jelly—it’s a plastic bag that could make the sea turtle sick."></Bodytext>
+                <MovingImage2 image="/jellyfish.svg"/>
 
                 <div className="container">
                     <Header marginbottom="40px" text="How can you help?"/>
-                    <div className="help"><ImgTxt src="/city-enviro-2.svg" width="70px" text="Use reusable straws!"/></div>
+                    <div className="help"><ImgTxt src="/straws.svg" width="70px" text="Use reusable straws!"/></div>
                     <div className="help"><Why text="Plastic straws get stuck on turtles nose!" bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="65px"/></div>
-                    <div className="help"><ImgTxt src="/city-enviro-3.svg" text="Reuse plastic bags"/></div>
+                    <div className="help"><ImgTxt src="/bag.svg" text="Reuse plastic bags"/></div>
                     <div className="help"><Why text="Marine animals mistakenly eat plastic bags!" bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="85px" text="Plastic breaks down into microplastics entering sewers and farmland"/></div>
                 </div>
                
