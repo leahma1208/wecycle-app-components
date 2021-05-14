@@ -89,14 +89,14 @@ export default function UrbanPeople(){
             <div id="box" className="container">
                 <Header text="Plastic affecting human health" margintop="50px;" marginbottom="0px;"></Header>
                 <Bodytext marginbottom="0px;"Text="There are different types of ways that plastic is dangerous for humans."></Bodytext>
-                <MovingImage2 image="/city-people-plastic.svg"/>
+                <MovingImage2 image="/person.svg"/>
                 <Bodytext marginbottom="20px;"Text="Other toxins in plastics are directly linked to cancers, birth defects, immune system problems, and childhood developmental issues."></Bodytext>
-                <MovingImage2 image="/city-people-plastic.svg"/>
+                <MovingImage2 image="/lungs.svg"/>
                 <div className="container">
                     <Header marginbottom="40px" text="How can you help?"/>
-                    <div className="help"><ImgTxt text="Use your own bottles!" /></div>
+                    <div className="help"><ImgTxt src="gbottle.svg" text="Use your own bottles!" /></div>
                     <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="70px" text="Bisphenol A causes cancer and heart disease!"/></div>
-                    <div className="help"><ImgTxt src="/coffeecups.svg" text="Avoid use of styrofoam"/></div>
+                    <div className="help"><ImgTxt src="/egg.svg" text="Avoid use of styrofoam"/></div>
                     <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="70px" text="Styrofoam breaks down to micro plastics!"/></div>
                 </div>
                
