@@ -122,7 +122,7 @@ export default function UrbanEnvironment(){
                 </div>
             </div>
             <div>
-                <BottomBar routeTo1="/Oceanpeople"></BottomBar>
+                <BottomBar routeTo1="/marineenviro"></BottomBar>
             </div>
 
         </Holder>
