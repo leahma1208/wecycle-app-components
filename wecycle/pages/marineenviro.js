@@ -111,7 +111,7 @@ export default function UrbanEnvironment(){
                     <Header marginbottom="40px" text="How can you help?"/>
                     <div className="help"><ImgTxt src="/mask.svg" width="70px" text="Throw away your mask"/></div>
                     <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="65px" text="More than 1.56 billion face masks could end up polluting oceans" /></div>
-                    <div className="help"><ImgTxt src="/plasticcarton.svg" text="Avoid single use plastic"/></div>
+                    <div className="help"><ImgTxt src="/plastics.svg" text="Avoid single use plastic"/></div>
                     <div className="help"><Why bgcolor1="#7E93FF" bgcolor2="#E1E6FF" bottom="85px" text="It takes 450 years or more to break regular plastic down into microplastic"/></div>
                 </div>
                
