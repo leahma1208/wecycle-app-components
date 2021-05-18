@@ -76,7 +76,7 @@ export default function LandfillEnvironment(){
             </div>
             <div className="container">
                 <Header left="10px" text="How is plastic in landfill affecting the Environment?"></Header>
-                <Medal text="Do you want to earn a Landfill Badge? Learn about the People, Environment, and Animals"/>
+                <Medal text="Keep going you’re halfway there!"/>
                 <Progress color="#FFEAAD" width="160px;"/>
             </div>
             <div id="box" className="container">
