@@ -7,7 +7,7 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import StudyOthers from '../comps/StudyOthers'
 import React, {useState} from 'react';
-import LandfillQuiz from '../comps/Landfillquiz';
+import Landfillquiz from '../comps/Landfillquiz';
 import Flag from '../comps/Flags'
 import BottomBar from '../comps/BottomBar';
 import { useRouter } from 'next/router';
@@ -133,7 +133,7 @@ export default function QuizTimeUrban({
             </Box>
 
             <ButtonHolder>
-                <LandfillQuiz
+                <Landfillquiz
                 onGarbageClick={HandleGarbage}
                 onRecycleClick={()=>router.push("/LandfillCorrectAnswer")}
                 onCompostClick={HandleCompost}
