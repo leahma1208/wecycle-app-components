@@ -7,7 +7,7 @@ import Didyouknow from '../comps/Didyouknow';
 import Start from '../comps/Start';
 import StudyOthers from '../comps/StudyOthers'
 import React, {useState} from 'react';
-import Landfillquiz from '../comps/Landfillquiz';
+import LandfillQuiz from '../comps/LandfillQuiz';
 import Flag from '../comps/Flags'
 import BottomBar from '../comps/BottomBar';
 import { useRouter } from 'next/router';
@@ -79,8 +79,8 @@ export default function QuizTimeUrban({
     const [texts, setTexts] = useState("");
     const [title, setTitle] = useState("Study Other Regions");
     const [source , setSource] = useState("/ForwardButton.svg");
-    const [route, setRoute] = useState("/regions")
-    const [backgrounds, setBackground] = useState("#FFEAAD")
+    const [route, setRoute] = useState("/regions");
+    const [backgrounds, setBackground] = useState("#FFEAAD");
 
 
 
@@ -133,7 +133,7 @@ export default function QuizTimeUrban({
             </Box>
 
             <ButtonHolder>
-                <Landfillquiz
+                <LandfillQuiz
                 onGarbageClick={HandleGarbage}
                 onRecycleClick={()=>router.push("/LandfillCorrectAnswer")}
                 onCompostClick={HandleCompost}
